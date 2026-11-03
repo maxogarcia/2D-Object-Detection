@@ -1,0 +1,1599 @@
+{
+  "command": "python.exe evaluate.py --model rtdetr-l --dataset coco --max-images 200",
+  "dataset": {
+    "name": "coco",
+    "annotations": "data\\coco\\annotations\\instances_val2017.json",
+    "images": "data\\coco\\val2017",
+    "split": "COCO 2017 Dataset",
+    "num_images": 200,
+    "evaluated_categories": [
+      {
+        "id": 1,
+        "name": "person"
+      },
+      {
+        "id": 2,
+        "name": "bicycle"
+      },
+      {
+        "id": 3,
+        "name": "car"
+      },
+      {
+        "id": 4,
+        "name": "motorcycle"
+      },
+      {
+        "id": 5,
+        "name": "airplane"
+      },
+      {
+        "id": 6,
+        "name": "bus"
+      },
+      {
+        "id": 7,
+        "name": "train"
+      },
+      {
+        "id": 8,
+        "name": "truck"
+      },
+      {
+        "id": 9,
+        "name": "boat"
+      },
+      {
+        "id": 10,
+        "name": "traffic light"
+      },
+      {
+        "id": 11,
+        "name": "fire hydrant"
+      },
+      {
+        "id": 13,
+        "name": "stop sign"
+      },
+      {
+        "id": 14,
+        "name": "parking meter"
+      },
+      {
+        "id": 15,
+        "name": "bench"
+      },
+      {
+        "id": 16,
+        "name": "bird"
+      },
+      {
+        "id": 17,
+        "name": "cat"
+      },
+      {
+        "id": 18,
+        "name": "dog"
+      },
+      {
+        "id": 19,
+        "name": "horse"
+      },
+      {
+        "id": 20,
+        "name": "sheep"
+      },
+      {
+        "id": 21,
+        "name": "cow"
+      },
+      {
+        "id": 22,
+        "name": "elephant"
+      },
+      {
+        "id": 23,
+        "name": "bear"
+      },
+      {
+        "id": 24,
+        "name": "zebra"
+      },
+      {
+        "id": 25,
+        "name": "giraffe"
+      },
+      {
+        "id": 27,
+        "name": "backpack"
+      },
+      {
+        "id": 28,
+        "name": "umbrella"
+      },
+      {
+        "id": 31,
+        "name": "handbag"
+      },
+      {
+        "id": 32,
+        "name": "tie"
+      },
+      {
+        "id": 33,
+        "name": "suitcase"
+      },
+      {
+        "id": 34,
+        "name": "frisbee"
+      },
+      {
+        "id": 35,
+        "name": "skis"
+      },
+      {
+        "id": 36,
+        "name": "snowboard"
+      },
+      {
+        "id": 37,
+        "name": "sports ball"
+      },
+      {
+        "id": 38,
+        "name": "kite"
+      },
+      {
+        "id": 39,
+        "name": "baseball bat"
+      },
+      {
+        "id": 40,
+        "name": "baseball glove"
+      },
+      {
+        "id": 41,
+        "name": "skateboard"
+      },
+      {
+        "id": 42,
+        "name": "surfboard"
+      },
+      {
+        "id": 43,
+        "name": "tennis racket"
+      },
+      {
+        "id": 44,
+        "name": "bottle"
+      },
+      {
+        "id": 46,
+        "name": "wine glass"
+      },
+      {
+        "id": 47,
+        "name": "cup"
+      },
+      {
+        "id": 48,
+        "name": "fork"
+      },
+      {
+        "id": 49,
+        "name": "knife"
+      },
+      {
+        "id": 50,
+        "name": "spoon"
+      },
+      {
+        "id": 51,
+        "name": "bowl"
+      },
+      {
+        "id": 52,
+        "name": "banana"
+      },
+      {
+        "id": 53,
+        "name": "apple"
+      },
+      {
+        "id": 54,
+        "name": "sandwich"
+      },
+      {
+        "id": 55,
+        "name": "orange"
+      },
+      {
+        "id": 56,
+        "name": "broccoli"
+      },
+      {
+        "id": 57,
+        "name": "carrot"
+      },
+      {
+        "id": 58,
+        "name": "hot dog"
+      },
+      {
+        "id": 59,
+        "name": "pizza"
+      },
+      {
+        "id": 60,
+        "name": "donut"
+      },
+      {
+        "id": 61,
+        "name": "cake"
+      },
+      {
+        "id": 62,
+        "name": "chair"
+      },
+      {
+        "id": 63,
+        "name": "couch"
+      },
+      {
+        "id": 64,
+        "name": "potted plant"
+      },
+      {
+        "id": 65,
+        "name": "bed"
+      },
+      {
+        "id": 67,
+        "name": "dining table"
+      },
+      {
+        "id": 70,
+        "name": "toilet"
+      },
+      {
+        "id": 72,
+        "name": "tv"
+      },
+      {
+        "id": 73,
+        "name": "laptop"
+      },
+      {
+        "id": 74,
+        "name": "mouse"
+      },
+      {
+        "id": 75,
+        "name": "remote"
+      },
+      {
+        "id": 76,
+        "name": "keyboard"
+      },
+      {
+        "id": 77,
+        "name": "cell phone"
+      },
+      {
+        "id": 78,
+        "name": "microwave"
+      },
+      {
+        "id": 79,
+        "name": "oven"
+      },
+      {
+        "id": 80,
+        "name": "toaster"
+      },
+      {
+        "id": 81,
+        "name": "sink"
+      },
+      {
+        "id": 82,
+        "name": "refrigerator"
+      },
+      {
+        "id": 84,
+        "name": "book"
+      },
+      {
+        "id": 85,
+        "name": "clock"
+      },
+      {
+        "id": 86,
+        "name": "vase"
+      },
+      {
+        "id": 87,
+        "name": "scissors"
+      },
+      {
+        "id": 88,
+        "name": "teddy bear"
+      },
+      {
+        "id": 89,
+        "name": "hair drier"
+      },
+      {
+        "id": 90,
+        "name": "toothbrush"
+      }
+    ]
+  },
+  "model": {
+    "model": "rtdetr-l",
+    "family": "DETR",
+    "framework": "ultralytics 8.4.190",
+    "checkpoint": "rtdetr-l.pt",
+    "input_resolution": "letterbox, long side 640 (rect, stride-padded)",
+    "conf_thresh": 0.001,
+    "nms_iou": "none (set prediction, NMS-free)",
+    "max_det": 100,
+    "fp16": false,
+    "text_prompt": null,
+    "params_M": 32.97
+  },
+  "eval_wall_time_s": 16.4,
+  "eval_ms_per_image_incl_io": 82.1,
+  "stats": {
+    "AP": 0.5732731339632862,
+    "AP50": 0.7592944485710962,
+    "AP75": 0.6128273790080643,
+    "AP_small": 0.4193878521767737,
+    "AP_medium": 0.6031342722604497,
+    "AP_large": 0.7601851106710515,
+    "AR1": 0.4340780330163849,
+    "AR10": 0.7018795661728855,
+    "AR100": 0.7285766972861738,
+    "AR_small": 0.5384871968300291,
+    "AR_medium": 0.7246540904189145,
+    "AR_large": 0.9026712971159643
+  },
+  "per_class": [
+    {
+      "category_id": 1,
+      "name": "person",
+      "num_gt": 504,
+      "AP": 0.6320759969040946,
+      "AP50": 0.8771138301000619,
+      "AP75": 0.6880423961239983,
+      "AR100": 0.7136904761904762,
+      "AP_small": 0.40544399765173594,
+      "num_gt_small": 187,
+      "AP_medium": 0.6921580086499675,
+      "num_gt_medium": 188,
+      "AP_large": 0.8525121484492033,
+      "num_gt_large": 129
+    },
+    {
+      "category_id": 2,
+      "name": "bicycle",
+      "num_gt": 11,
+      "AP": 0.6583751106203057,
+      "AP50": 0.7701702102983409,
+      "AP75": 0.7701702102983409,
+      "AR100": 0.8454545454545455,
+      "AP_small": 0.7999999999999999,
+      "num_gt_small": 1,
+      "AP_medium": 0.6472607260726073,
+      "num_gt_medium": 7,
+      "AP_large": 0.8579207920792079,
+      "num_gt_large": 3
+    },
+    {
+      "category_id": 3,
+      "name": "car",
+      "num_gt": 46,
+      "AP": 0.5751786591385082,
+      "AP50": 0.7805961218584736,
+      "AP75": 0.618171312420399,
+      "AR100": 0.7586956521739131,
+      "AP_small": 0.491220523957244,
+      "num_gt_small": 27,
+      "AP_medium": 0.6948505816968251,
+      "num_gt_medium": 12,
+      "AP_large": 0.8521923620933521,
+      "num_gt_large": 7
+    },
+    {
+      "category_id": 4,
+      "name": "motorcycle",
+      "num_gt": 21,
+      "AP": 0.7244361095402828,
+      "AP50": 0.9676132448409677,
+      "AP75": 0.8317751887970752,
+      "AR100": 0.7952380952380953,
+      "AP_small": 0.4405940594059406,
+      "num_gt_small": 2,
+      "AP_medium": 0.7244995109522879,
+      "num_gt_medium": 14,
+      "AP_large": 0.9207920792079208,
+      "num_gt_large": 5
+    },
+    {
+      "category_id": 5,
+      "name": "airplane",
+      "num_gt": 6,
+      "AP": 0.7036303630363037,
+      "AP50": 0.8036303630363039,
+      "AP75": 0.6633663366336634,
+      "AR100": 0.7166666666666667,
+      "AP_small": 0.6524752475247525,
+      "num_gt_small": 2,
+      "AP_medium": 0.5049504950495048,
+      "num_gt_medium": 2,
+      "AP_large": 1.0,
+      "num_gt_large": 2
+    },
+    {
+      "category_id": 6,
+      "name": "bus",
+      "num_gt": 25,
+      "AP": 0.6237076727992031,
+      "AP50": 0.8729486741777626,
+      "AP75": 0.6358014062275793,
+      "AR100": 0.7000000000000001,
+      "AP_small": 0.6067656765676567,
+      "num_gt_small": 7,
+      "AP_medium": 0.5008882717540047,
+      "num_gt_medium": 12,
+      "AP_large": 0.9221534653465346,
+      "num_gt_large": 6
+    },
+    {
+      "category_id": 7,
+      "name": "train",
+      "num_gt": 5,
+      "AP": 0.7821782178217822,
+      "AP50": 0.801980198019802,
+      "AP75": 0.801980198019802,
+      "AR100": 0.78,
+      "AP_small": null,
+      "num_gt_small": 0,
+      "AP_medium": null,
+      "num_gt_medium": 0,
+      "AP_large": 0.7821782178217822,
+      "num_gt_large": 5
+    },
+    {
+      "category_id": 8,
+      "name": "truck",
+      "num_gt": 15,
+      "AP": 0.32792854455966935,
+      "AP50": 0.48738741266514707,
+      "AP75": 0.46259685668647216,
+      "AR100": 0.7133333333333333,
+      "AP_small": 0.245393551777538,
+      "num_gt_small": 8,
+      "AP_medium": 0.37858230878032856,
+      "num_gt_medium": 5,
+      "AP_large": 0.7504950495049505,
+      "num_gt_large": 2
+    },
+    {
+      "category_id": 9,
+      "name": "boat",
+      "num_gt": 7,
+      "AP": 0.387057991513437,
+      "AP50": 0.5539250353606789,
+      "AP75": 0.5106082036775106,
+      "AR100": 0.5,
+      "AP_small": 0.1504950495049505,
+      "num_gt_small": 3,
+      "AP_medium": 0.5524752475247525,
+      "num_gt_medium": 4,
+      "AP_large": null,
+      "num_gt_large": 0
+    },
+    {
+      "category_id": 10,
+      "name": "traffic light",
+      "num_gt": 15,
+      "AP": 0.3924933089752006,
+      "AP50": 0.6259522858011655,
+      "AP75": 0.4201556997805044,
+      "AR100": 0.58,
+      "AP_small": 0.39168062960142164,
+      "num_gt_small": 12,
+      "AP_medium": 0.5039603960396039,
+      "num_gt_medium": 2,
+      "AP_large": 0.5,
+      "num_gt_large": 1
+    },
+    {
+      "category_id": 11,
+      "name": "fire hydrant",
+      "num_gt": 5,
+      "AP": 0.7972418670438471,
+      "AP50": 0.9434229137199429,
+      "AP75": 0.9434229137199429,
+      "AR100": 0.8800000000000001,
+      "AP_small": 0.6999999999999998,
+      "num_gt_small": 1,
+      "AP_medium": 0.8504950495049505,
+      "num_gt_medium": 2,
+      "AP_large": 0.9252475247524753,
+      "num_gt_large": 2
+    },
+    {
+      "category_id": 13,
+      "name": "stop sign",
+      "num_gt": 4,
+      "AP": 0.8811881188118812,
+      "AP50": 0.9504950495049505,
+      "AP75": 0.9504950495049505,
+      "AR100": 0.925,
+      "AP_small": 0.8999999999999999,
+      "num_gt_small": 1,
+      "AP_medium": 0.9,
+      "num_gt_medium": 2,
+      "AP_large": 0.9999999999999998,
+      "num_gt_large": 1
+    },
+    {
+      "category_id": 14,
+      "name": "parking meter",
+      "num_gt": 0,
+      "AP": null,
+      "AP50": null,
+      "AP75": null,
+      "AR100": null,
+      "AP_small": null,
+      "num_gt_small": 0,
+      "AP_medium": null,
+      "num_gt_medium": 0,
+      "AP_large": null,
+      "num_gt_large": 0
+    },
+    {
+      "category_id": 15,
+      "name": "bench",
+      "num_gt": 15,
+      "AP": 0.5451505686282916,
+      "AP50": 0.7669543740088297,
+      "AP75": 0.7030615561556157,
+      "AR100": 0.7933333333333332,
+      "AP_small": 0.678941355674029,
+      "num_gt_small": 7,
+      "AP_medium": 0.6515078334950041,
+      "num_gt_medium": 7,
+      "AP_large": 0.4,
+      "num_gt_large": 1
+    },
+    {
+      "category_id": 16,
+      "name": "bird",
+      "num_gt": 11,
+      "AP": 0.5576716450547982,
+      "AP50": 0.7983291286875167,
+      "AP75": 0.640895705495608,
+      "AR100": 0.6545454545454545,
+      "AP_small": 0.42850354315775296,
+      "num_gt_small": 6,
+      "AP_medium": 0.7940594059405941,
+      "num_gt_medium": 5,
+      "AP_large": null,
+      "num_gt_large": 0
+    },
+    {
+      "category_id": 17,
+      "name": "cat",
+      "num_gt": 7,
+      "AP": 0.905940594059406,
+      "AP50": 1.0,
+      "AP75": 1.0,
+      "AR100": 0.9285714285714286,
+      "AP_small": null,
+      "num_gt_small": 0,
+      "AP_medium": 0.9999999999999998,
+      "num_gt_medium": 1,
+      "AP_large": 0.898036303630363,
+      "num_gt_large": 6
+    },
+    {
+      "category_id": 18,
+      "name": "dog",
+      "num_gt": 2,
+      "AP": 0.7019801980198019,
+      "AP50": 1.0,
+      "AP75": 0.5049504950495048,
+      "AR100": 0.7,
+      "AP_small": null,
+      "num_gt_small": 0,
+      "AP_medium": 0.49999999999999994,
+      "num_gt_medium": 1,
+      "AP_large": 0.8999999999999999,
+      "num_gt_large": 1
+    },
+    {
+      "category_id": 19,
+      "name": "horse",
+      "num_gt": 9,
+      "AP": 0.7493635077793493,
+      "AP50": 0.9881188118811886,
+      "AP75": 0.724045261669024,
+      "AR100": 0.7888888888888889,
+      "AP_small": 0.3107260726072607,
+      "num_gt_small": 2,
+      "AP_medium": 0.7514851485148515,
+      "num_gt_medium": 4,
+      "AP_large": 1.0,
+      "num_gt_large": 3
+    },
+    {
+      "category_id": 20,
+      "name": "sheep",
+      "num_gt": 10,
+      "AP": 0.7522635061599409,
+      "AP50": 0.9543031226199546,
+      "AP75": 0.72928174396387,
+      "AR100": 0.89,
+      "AP_small": null,
+      "num_gt_small": 0,
+      "AP_medium": 0.8532453245324533,
+      "num_gt_medium": 2,
+      "AP_large": 0.7379308488824511,
+      "num_gt_large": 8
+    },
+    {
+      "category_id": 21,
+      "name": "cow",
+      "num_gt": 4,
+      "AP": 0.476147614761476,
+      "AP50": 0.5274527452745273,
+      "AP75": 0.5274527452745273,
+      "AR100": 0.875,
+      "AP_small": 0.48633663366336627,
+      "num_gt_small": 3,
+      "AP_medium": null,
+      "num_gt_medium": 0,
+      "AP_large": 0.9999999999999998,
+      "num_gt_large": 1
+    },
+    {
+      "category_id": 22,
+      "name": "elephant",
+      "num_gt": 6,
+      "AP": 0.5999912592822872,
+      "AP50": 0.7654890489048907,
+      "AP75": 0.7073432343234325,
+      "AR100": 0.9666666666666666,
+      "AP_small": null,
+      "num_gt_small": 0,
+      "AP_medium": 0.7599009900990097,
+      "num_gt_medium": 2,
+      "AP_large": 0.6021812253456484,
+      "num_gt_large": 4
+    },
+    {
+      "category_id": 23,
+      "name": "bear",
+      "num_gt": 3,
+      "AP": 0.9336633663366337,
+      "AP50": 1.0,
+      "AP75": 1.0,
+      "AR100": 0.9333333333333333,
+      "AP_small": null,
+      "num_gt_small": 0,
+      "AP_medium": null,
+      "num_gt_medium": 0,
+      "AP_large": 0.9336633663366337,
+      "num_gt_large": 3
+    },
+    {
+      "category_id": 24,
+      "name": "zebra",
+      "num_gt": 11,
+      "AP": 0.8438080534857609,
+      "AP50": 0.9917491749174919,
+      "AP75": 0.8861386138613861,
+      "AR100": 0.8818181818181818,
+      "AP_small": 0.39999999999999997,
+      "num_gt_small": 1,
+      "AP_medium": 0.9,
+      "num_gt_medium": 2,
+      "AP_large": 0.9119437805849551,
+      "num_gt_large": 8
+    },
+    {
+      "category_id": 25,
+      "name": "giraffe",
+      "num_gt": 1,
+      "AP": 0.9999999999999998,
+      "AP50": 0.9999999999999999,
+      "AP75": 0.9999999999999999,
+      "AR100": 1.0,
+      "AP_small": null,
+      "num_gt_small": 0,
+      "AP_medium": null,
+      "num_gt_medium": 0,
+      "AP_large": 0.9999999999999998,
+      "num_gt_large": 1
+    },
+    {
+      "category_id": 27,
+      "name": "backpack",
+      "num_gt": 27,
+      "AP": 0.1797210609987819,
+      "AP50": 0.35984432406329653,
+      "AP75": 0.16911170495958724,
+      "AR100": 0.4,
+      "AP_small": 0.2284153297138123,
+      "num_gt_small": 20,
+      "AP_medium": 0.2673514851485148,
+      "num_gt_medium": 7,
+      "AP_large": null,
+      "num_gt_large": 0
+    },
+    {
+      "category_id": 28,
+      "name": "umbrella",
+      "num_gt": 7,
+      "AP": 0.5102496713085942,
+      "AP50": 0.7501086694035256,
+      "AP75": 0.5500979366229305,
+      "AR100": 0.7285714285714286,
+      "AP_small": 0.17738556464342087,
+      "num_gt_small": 3,
+      "AP_medium": 0.65016501650165,
+      "num_gt_medium": 2,
+      "AP_large": 0.9504950495049505,
+      "num_gt_large": 2
+    },
+    {
+      "category_id": 31,
+      "name": "handbag",
+      "num_gt": 21,
+      "AP": 0.3111566378501789,
+      "AP50": 0.4045941777031549,
+      "AP75": 0.3625510399234861,
+      "AR100": 0.5666666666666667,
+      "AP_small": 0.15887328458873282,
+      "num_gt_small": 8,
+      "AP_medium": 0.45327018304810246,
+      "num_gt_medium": 11,
+      "AP_large": 0.5029702970297029,
+      "num_gt_large": 2
+    },
+    {
+      "category_id": 32,
+      "name": "tie",
+      "num_gt": 24,
+      "AP": 0.44851217259483545,
+      "AP50": 0.7463785525138993,
+      "AP75": 0.37906594487240614,
+      "AR100": 0.5791666666666667,
+      "AP_small": 0.2577312875518321,
+      "num_gt_small": 15,
+      "AP_medium": 0.7676697312588401,
+      "num_gt_medium": 7,
+      "AP_large": 0.8009900990099009,
+      "num_gt_large": 2
+    },
+    {
+      "category_id": 33,
+      "name": "suitcase",
+      "num_gt": 4,
+      "AP": 0.8514851485148515,
+      "AP50": 1.0,
+      "AP75": 1.0,
+      "AR100": 0.85,
+      "AP_small": null,
+      "num_gt_small": 0,
+      "AP_medium": 0.7514851485148515,
+      "num_gt_medium": 2,
+      "AP_large": 0.9504950495049505,
+      "num_gt_large": 2
+    },
+    {
+      "category_id": 34,
+      "name": "frisbee",
+      "num_gt": 9,
+      "AP": 0.8592409240924092,
+      "AP50": 1.0,
+      "AP75": 1.0,
+      "AR100": 0.9,
+      "AP_small": 0.8673267326732673,
+      "num_gt_small": 3,
+      "AP_medium": 0.9216171617161716,
+      "num_gt_medium": 4,
+      "AP_large": 0.8252475247524752,
+      "num_gt_large": 2
+    },
+    {
+      "category_id": 35,
+      "name": "skis",
+      "num_gt": 5,
+      "AP": 0.6674139112024411,
+      "AP50": 0.9669966996699667,
+      "AP75": 0.6039603960396039,
+      "AR100": 0.7200000000000001,
+      "AP_small": 0.6589108910891089,
+      "num_gt_small": 3,
+      "AP_medium": 0.6298444130127299,
+      "num_gt_medium": 2,
+      "AP_large": null,
+      "num_gt_large": 0
+    },
+    {
+      "category_id": 36,
+      "name": "snowboard",
+      "num_gt": 0,
+      "AP": null,
+      "AP50": null,
+      "AP75": null,
+      "AR100": null,
+      "AP_small": null,
+      "num_gt_small": 0,
+      "AP_medium": null,
+      "num_gt_medium": 0,
+      "AP_large": null,
+      "num_gt_large": 0
+    },
+    {
+      "category_id": 37,
+      "name": "sports ball",
+      "num_gt": 4,
+      "AP": 0.3122112211221122,
+      "AP50": 0.7524752475247525,
+      "AP75": 0.42244224422442234,
+      "AR100": 0.35,
+      "AP_small": 0.41089108910891087,
+      "num_gt_small": 3,
+      "AP_medium": 0.0,
+      "num_gt_medium": 1,
+      "AP_large": null,
+      "num_gt_large": 0
+    },
+    {
+      "category_id": 38,
+      "name": "kite",
+      "num_gt": 19,
+      "AP": 0.580806763323796,
+      "AP50": 0.8521670820928247,
+      "AP75": 0.6608077699311747,
+      "AR100": 0.7473684210526316,
+      "AP_small": 0.6692409240924092,
+      "num_gt_small": 8,
+      "AP_medium": 0.5481669532499468,
+      "num_gt_medium": 9,
+      "AP_large": 0.7402168788307402,
+      "num_gt_large": 2
+    },
+    {
+      "category_id": 39,
+      "name": "baseball bat",
+      "num_gt": 4,
+      "AP": 0.5183993399339935,
+      "AP50": 0.8556105610561057,
+      "AP75": 0.38118811881188114,
+      "AR100": 0.625,
+      "AP_small": 0.5340759075907591,
+      "num_gt_small": 4,
+      "AP_medium": null,
+      "num_gt_medium": 0,
+      "AP_large": null,
+      "num_gt_large": 0
+    },
+    {
+      "category_id": 40,
+      "name": "baseball glove",
+      "num_gt": 6,
+      "AP": 0.5795615275813296,
+      "AP50": 0.9759547383309762,
+      "AP75": 0.650919377652051,
+      "AR100": 0.7166666666666667,
+      "AP_small": 0.8,
+      "num_gt_small": 3,
+      "AP_medium": 0.3826732673267327,
+      "num_gt_medium": 3,
+      "AP_large": null,
+      "num_gt_large": 0
+    },
+    {
+      "category_id": 41,
+      "name": "skateboard",
+      "num_gt": 6,
+      "AP": 0.6542432814710042,
+      "AP50": 0.8316831683168316,
+      "AP75": 0.8316831683168316,
+      "AR100": 0.6833333333333333,
+      "AP_small": 0.4039603960396039,
+      "num_gt_small": 2,
+      "AP_medium": 0.8192362093352192,
+      "num_gt_medium": 3,
+      "AP_large": 0.6999999999999998,
+      "num_gt_large": 1
+    },
+    {
+      "category_id": 42,
+      "name": "surfboard",
+      "num_gt": 10,
+      "AP": 0.7693322066657061,
+      "AP50": 1.0,
+      "AP75": 0.8993399339933992,
+      "AR100": 0.86,
+      "AP_small": 0.32592592592592584,
+      "num_gt_small": 1,
+      "AP_medium": 0.7890358772719377,
+      "num_gt_medium": 6,
+      "AP_large": 0.9033663366336634,
+      "num_gt_large": 3
+    },
+    {
+      "category_id": 43,
+      "name": "tennis racket",
+      "num_gt": 6,
+      "AP": 0.6153465346534653,
+      "AP50": 1.0,
+      "AP75": 0.36468646864686466,
+      "AR100": 0.6666666666666666,
+      "AP_small": 0.4448844884488449,
+      "num_gt_small": 3,
+      "AP_medium": 0.7554455445544555,
+      "num_gt_medium": 3,
+      "AP_large": null,
+      "num_gt_large": 0
+    },
+    {
+      "category_id": 44,
+      "name": "bottle",
+      "num_gt": 31,
+      "AP": 0.34738393561763764,
+      "AP50": 0.5444607665852468,
+      "AP75": 0.3519116385322742,
+      "AR100": 0.5483870967741935,
+      "AP_small": 0.31920212068560505,
+      "num_gt_small": 23,
+      "AP_medium": 0.4881946640042155,
+      "num_gt_medium": 8,
+      "AP_large": null,
+      "num_gt_large": 0
+    },
+    {
+      "category_id": 46,
+      "name": "wine glass",
+      "num_gt": 32,
+      "AP": 0.4681879474378895,
+      "AP50": 0.6898319574507653,
+      "AP75": 0.5053786608891638,
+      "AR100": 0.559375,
+      "AP_small": 0.27457416329868284,
+      "num_gt_small": 15,
+      "AP_medium": 0.6398936743616485,
+      "num_gt_medium": 16,
+      "AP_large": 0.8999999999999999,
+      "num_gt_large": 1
+    },
+    {
+      "category_id": 47,
+      "name": "cup",
+      "num_gt": 49,
+      "AP": 0.6363579993250991,
+      "AP50": 0.8056936752076825,
+      "AP75": 0.7217574791845469,
+      "AR100": 0.7510204081632653,
+      "AP_small": 0.40113184537805935,
+      "num_gt_small": 21,
+      "AP_medium": 0.7763998816833736,
+      "num_gt_medium": 23,
+      "AP_large": 0.9339933993399341,
+      "num_gt_large": 5
+    },
+    {
+      "category_id": 48,
+      "name": "fork",
+      "num_gt": 12,
+      "AP": 0.5872647537371262,
+      "AP50": 0.6589416997965781,
+      "AP75": 0.6329232465580654,
+      "AR100": 0.7666666666666667,
+      "AP_small": 0.5073432343234324,
+      "num_gt_small": 6,
+      "AP_medium": 0.7832485951297832,
+      "num_gt_medium": 5,
+      "AP_large": 0.32499999999999996,
+      "num_gt_large": 1
+    },
+    {
+      "category_id": 49,
+      "name": "knife",
+      "num_gt": 21,
+      "AP": 0.5888873309632026,
+      "AP50": 0.7469404835220363,
+      "AP75": 0.6501167973940252,
+      "AR100": 0.719047619047619,
+      "AP_small": 0.3749354935493549,
+      "num_gt_small": 8,
+      "AP_medium": 0.7907907481185341,
+      "num_gt_medium": 11,
+      "AP_large": 0.7029702970297029,
+      "num_gt_large": 2
+    },
+    {
+      "category_id": 50,
+      "name": "spoon",
+      "num_gt": 13,
+      "AP": 0.40675586919594214,
+      "AP50": 0.605456795679568,
+      "AP75": 0.4121463932107497,
+      "AR100": 0.6461538461538462,
+      "AP_small": 0.40367894221463785,
+      "num_gt_small": 8,
+      "AP_medium": 0.6067656765676568,
+      "num_gt_medium": 5,
+      "AP_large": null,
+      "num_gt_large": 0
+    },
+    {
+      "category_id": 51,
+      "name": "bowl",
+      "num_gt": 31,
+      "AP": 0.5062857618951729,
+      "AP50": 0.6157062525286627,
+      "AP75": 0.5402726241905746,
+      "AR100": 0.7322580645161291,
+      "AP_small": 0.47854493215175475,
+      "num_gt_small": 10,
+      "AP_medium": 0.36568049662109064,
+      "num_gt_medium": 9,
+      "AP_large": 0.6913588257321973,
+      "num_gt_large": 12
+    },
+    {
+      "category_id": 52,
+      "name": "banana",
+      "num_gt": 19,
+      "AP": 0.3663856194644047,
+      "AP50": 0.5520057639566774,
+      "AP75": 0.36353635559018627,
+      "AR100": 0.7052631578947367,
+      "AP_small": 0.45923391240222916,
+      "num_gt_small": 9,
+      "AP_medium": 0.08055706669568054,
+      "num_gt_medium": 2,
+      "AP_large": 0.6659455861552542,
+      "num_gt_large": 8
+    },
+    {
+      "category_id": 53,
+      "name": "apple",
+      "num_gt": 4,
+      "AP": 0.1892431001341892,
+      "AP50": 0.2485402386392485,
+      "AP75": 0.2485402386392485,
+      "AR100": 0.825,
+      "AP_small": 0.7252475247524752,
+      "num_gt_small": 2,
+      "AP_medium": null,
+      "num_gt_medium": 0,
+      "AP_large": 0.1700990099009901,
+      "num_gt_large": 2
+    },
+    {
+      "category_id": 54,
+      "name": "sandwich",
+      "num_gt": 8,
+      "AP": 0.4202054864248715,
+      "AP50": 0.5668751085634881,
+      "AP75": 0.5135983523164347,
+      "AR100": 0.8625,
+      "AP_small": null,
+      "num_gt_small": 0,
+      "AP_medium": null,
+      "num_gt_medium": 0,
+      "AP_large": 0.5100497857667541,
+      "num_gt_large": 8
+    },
+    {
+      "category_id": 55,
+      "name": "orange",
+      "num_gt": 1,
+      "AP": 0.25,
+      "AP50": 0.25,
+      "AP75": 0.25,
+      "AR100": 1.0,
+      "AP_small": null,
+      "num_gt_small": 0,
+      "AP_medium": null,
+      "num_gt_medium": 0,
+      "AP_large": 0.3333333333333333,
+      "num_gt_large": 1
+    },
+    {
+      "category_id": 56,
+      "name": "broccoli",
+      "num_gt": 17,
+      "AP": 0.3609845818916957,
+      "AP50": 0.6627444617371437,
+      "AP75": 0.40463496899140466,
+      "AR100": 0.5411764705882354,
+      "AP_small": 0.06666666666666667,
+      "num_gt_small": 1,
+      "AP_medium": 0.3447478238607271,
+      "num_gt_medium": 12,
+      "AP_large": 0.59329573150793,
+      "num_gt_large": 4
+    },
+    {
+      "category_id": 57,
+      "name": "carrot",
+      "num_gt": 13,
+      "AP": 0.38107283848685625,
+      "AP50": 0.5401890189018902,
+      "AP75": 0.4221700741502722,
+      "AR100": 0.5846153846153846,
+      "AP_small": 0.0,
+      "num_gt_small": 3,
+      "AP_medium": 0.4605060229045877,
+      "num_gt_medium": 8,
+      "AP_large": 0.8349834983498348,
+      "num_gt_large": 2
+    },
+    {
+      "category_id": 58,
+      "name": "hot dog",
+      "num_gt": 3,
+      "AP": 0.18943894389438942,
+      "AP50": 0.22277227722772278,
+      "AP75": 0.22277227722772278,
+      "AR100": 0.8333333333333334,
+      "AP_small": 0.45,
+      "num_gt_small": 1,
+      "AP_medium": 0.2666666666666666,
+      "num_gt_medium": 1,
+      "AP_large": 0.1,
+      "num_gt_large": 1
+    },
+    {
+      "category_id": 59,
+      "name": "pizza",
+      "num_gt": 13,
+      "AP": 0.6881496973226734,
+      "AP50": 0.9312754804892251,
+      "AP75": 0.8384867898554561,
+      "AR100": 0.776923076923077,
+      "AP_small": 0.5999999999999999,
+      "num_gt_small": 1,
+      "AP_medium": 0.6326732673267327,
+      "num_gt_medium": 3,
+      "AP_large": 0.7385519801980198,
+      "num_gt_large": 9
+    },
+    {
+      "category_id": 60,
+      "name": "donut",
+      "num_gt": 1,
+      "AP": 0.9999999999999998,
+      "AP50": 0.9999999999999999,
+      "AP75": 0.9999999999999999,
+      "AR100": 1.0,
+      "AP_small": null,
+      "num_gt_small": 0,
+      "AP_medium": null,
+      "num_gt_medium": 0,
+      "AP_large": 0.9999999999999998,
+      "num_gt_large": 1
+    },
+    {
+      "category_id": 61,
+      "name": "cake",
+      "num_gt": 3,
+      "AP": 0.6306930693069307,
+      "AP50": 0.6633663366336634,
+      "AP75": 0.6633663366336634,
+      "AR100": 0.6333333333333333,
+      "AP_small": 0.0,
+      "num_gt_small": 1,
+      "AP_medium": null,
+      "num_gt_medium": 0,
+      "AP_large": 0.9504950495049505,
+      "num_gt_large": 2
+    },
+    {
+      "category_id": 62,
+      "name": "chair",
+      "num_gt": 71,
+      "AP": 0.41194197507299324,
+      "AP50": 0.586293394859099,
+      "AP75": 0.4726587111755306,
+      "AR100": 0.680281690140845,
+      "AP_small": 0.15661207976316835,
+      "num_gt_small": 21,
+      "AP_medium": 0.47554135776120626,
+      "num_gt_medium": 43,
+      "AP_large": 0.7996367375464336,
+      "num_gt_large": 7
+    },
+    {
+      "category_id": 63,
+      "name": "couch",
+      "num_gt": 12,
+      "AP": 0.5226292087336812,
+      "AP50": 0.6202073409311375,
+      "AP75": 0.5899983471253528,
+      "AR100": 0.7,
+      "AP_small": 0.0,
+      "num_gt_small": 1,
+      "AP_medium": 0.3683168316831683,
+      "num_gt_medium": 3,
+      "AP_large": 0.6487898789878989,
+      "num_gt_large": 8
+    },
+    {
+      "category_id": 64,
+      "name": "potted plant",
+      "num_gt": 8,
+      "AP": 0.4702145214521452,
+      "AP50": 0.7945544554455446,
+      "AP75": 0.5066006600660067,
+      "AR100": 0.575,
+      "AP_small": 0.404950495049505,
+      "num_gt_small": 4,
+      "AP_medium": 0.648102310231023,
+      "num_gt_medium": 4,
+      "AP_large": null,
+      "num_gt_large": 0
+    },
+    {
+      "category_id": 65,
+      "name": "bed",
+      "num_gt": 9,
+      "AP": 0.5640314640707769,
+      "AP50": 0.8458066394874783,
+      "AP75": 0.5340956679701583,
+      "AR100": 0.8,
+      "AP_small": null,
+      "num_gt_small": 0,
+      "AP_medium": 0.7999999999999999,
+      "num_gt_medium": 1,
+      "AP_large": 0.5546868461585466,
+      "num_gt_large": 8
+    },
+    {
+      "category_id": 67,
+      "name": "dining table",
+      "num_gt": 29,
+      "AP": 0.6549255513133286,
+      "AP50": 0.7705954569724061,
+      "AP75": 0.7007735789378442,
+      "AR100": 0.8206896551724137,
+      "AP_small": 0.0,
+      "num_gt_small": 1,
+      "AP_medium": 0.4194648750589344,
+      "num_gt_medium": 6,
+      "AP_large": 0.7522843602396708,
+      "num_gt_large": 22
+    },
+    {
+      "category_id": 70,
+      "name": "toilet",
+      "num_gt": 4,
+      "AP": 0.5927392739273928,
+      "AP50": 1.0,
+      "AP75": 0.6303630363036302,
+      "AR100": 0.9,
+      "AP_small": null,
+      "num_gt_small": 0,
+      "AP_medium": 0.8504950495049505,
+      "num_gt_medium": 2,
+      "AP_large": 0.4403818953323903,
+      "num_gt_large": 2
+    },
+    {
+      "category_id": 72,
+      "name": "tv",
+      "num_gt": 16,
+      "AP": 0.7669554455445544,
+      "AP50": 0.8794554455445543,
+      "AP75": 0.8257425742574258,
+      "AR100": 0.83125,
+      "AP_small": 0.201980198019802,
+      "num_gt_small": 2,
+      "AP_medium": 0.8244695898161245,
+      "num_gt_medium": 9,
+      "AP_large": 0.8798679867986798,
+      "num_gt_large": 5
+    },
+    {
+      "category_id": 73,
+      "name": "laptop",
+      "num_gt": 14,
+      "AP": 0.6877539724667606,
+      "AP50": 0.792656765676568,
+      "AP75": 0.7244224422442244,
+      "AR100": 0.8285714285714286,
+      "AP_small": null,
+      "num_gt_small": 0,
+      "AP_medium": 0.6605368948388469,
+      "num_gt_medium": 8,
+      "AP_large": 0.7755775577557756,
+      "num_gt_large": 6
+    },
+    {
+      "category_id": 74,
+      "name": "mouse",
+      "num_gt": 5,
+      "AP": 0.7821782178217822,
+      "AP50": 1.0,
+      "AP75": 0.933993399339934,
+      "AR100": 0.82,
+      "AP_small": 0.7326732673267327,
+      "num_gt_small": 3,
+      "AP_medium": 0.8679867986798678,
+      "num_gt_medium": 2,
+      "AP_large": null,
+      "num_gt_large": 0
+    },
+    {
+      "category_id": 75,
+      "name": "remote",
+      "num_gt": 10,
+      "AP": 0.26163105784262636,
+      "AP50": 0.4407503908285565,
+      "AP75": 0.297029702970297,
+      "AR100": 0.45999999999999996,
+      "AP_small": 0.2624403028538148,
+      "num_gt_small": 10,
+      "AP_medium": null,
+      "num_gt_medium": 0,
+      "AP_large": null,
+      "num_gt_large": 0
+    },
+    {
+      "category_id": 76,
+      "name": "keyboard",
+      "num_gt": 9,
+      "AP": 0.4243837812352664,
+      "AP50": 0.5821216407355022,
+      "AP75": 0.495049504950495,
+      "AR100": 0.5555555555555556,
+      "AP_small": 0.0,
+      "num_gt_small": 2,
+      "AP_medium": 0.6320049504950496,
+      "num_gt_medium": 6,
+      "AP_large": 0.15,
+      "num_gt_large": 1
+    },
+    {
+      "category_id": 77,
+      "name": "cell phone",
+      "num_gt": 9,
+      "AP": 0.32660891089108907,
+      "AP50": 0.5346534653465347,
+      "AP75": 0.24282178217821782,
+      "AR100": 0.5222222222222223,
+      "AP_small": 0.3167986798679868,
+      "num_gt_small": 7,
+      "AP_medium": 0.7937293729372936,
+      "num_gt_medium": 2,
+      "AP_large": null,
+      "num_gt_large": 0
+    },
+    {
+      "category_id": 78,
+      "name": "microwave",
+      "num_gt": 3,
+      "AP": 0.8495049504950495,
+      "AP50": 1.0,
+      "AP75": 1.0,
+      "AR100": 0.8666666666666666,
+      "AP_small": 0.9999999999999998,
+      "num_gt_small": 1,
+      "AP_medium": 0.800990099009901,
+      "num_gt_medium": 2,
+      "AP_large": null,
+      "num_gt_large": 0
+    },
+    {
+      "category_id": 79,
+      "name": "oven",
+      "num_gt": 2,
+      "AP": 0.5579915134370579,
+      "AP50": 0.7524752475247525,
+      "AP75": 0.5049504950495048,
+      "AR100": 0.65,
+      "AP_small": null,
+      "num_gt_small": 0,
+      "AP_medium": 0.09999999999999999,
+      "num_gt_medium": 1,
+      "AP_large": 0.9999999999999998,
+      "num_gt_large": 1
+    },
+    {
+      "category_id": 80,
+      "name": "toaster",
+      "num_gt": 0,
+      "AP": null,
+      "AP50": null,
+      "AP75": null,
+      "AR100": null,
+      "AP_small": null,
+      "num_gt_small": 0,
+      "AP_medium": null,
+      "num_gt_medium": 0,
+      "AP_large": null,
+      "num_gt_large": 0
+    },
+    {
+      "category_id": 81,
+      "name": "sink",
+      "num_gt": 9,
+      "AP": 0.7149009900990099,
+      "AP50": 0.8943894389438944,
+      "AP75": 0.8943894389438944,
+      "AR100": 0.8,
+      "AP_small": 0.8504950495049505,
+      "num_gt_small": 2,
+      "AP_medium": 0.6621287128712872,
+      "num_gt_medium": 6,
+      "AP_large": 0.9999999999999998,
+      "num_gt_large": 1
+    },
+    {
+      "category_id": 82,
+      "name": "refrigerator",
+      "num_gt": 5,
+      "AP": 0.7341584158415841,
+      "AP50": 0.9257425742574258,
+      "AP75": 0.7029702970297029,
+      "AR100": 0.8,
+      "AP_small": null,
+      "num_gt_small": 0,
+      "AP_medium": 0.4,
+      "num_gt_medium": 1,
+      "AP_large": 0.800990099009901,
+      "num_gt_large": 4
+    },
+    {
+      "category_id": 84,
+      "name": "book",
+      "num_gt": 35,
+      "AP": 0.1832478233745774,
+      "AP50": 0.3664120657922083,
+      "AP75": 0.14806303060553014,
+      "AR100": 0.3485714285714286,
+      "AP_small": 0.2302290341275014,
+      "num_gt_small": 32,
+      "AP_medium": 0.18009931722220598,
+      "num_gt_medium": 3,
+      "AP_large": null,
+      "num_gt_large": 0
+    },
+    {
+      "category_id": 85,
+      "name": "clock",
+      "num_gt": 8,
+      "AP": 0.6384776169924685,
+      "AP50": 0.8035316352148039,
+      "AP75": 0.8035316352148039,
+      "AR100": 0.8,
+      "AP_small": 0.5201311789419589,
+      "num_gt_small": 6,
+      "AP_medium": null,
+      "num_gt_medium": 0,
+      "AP_large": 0.9252475247524753,
+      "num_gt_large": 2
+    },
+    {
+      "category_id": 86,
+      "name": "vase",
+      "num_gt": 14,
+      "AP": 0.6215866049469669,
+      "AP50": 0.8242419069493155,
+      "AP75": 0.5886647849135046,
+      "AR100": 0.7857142857142857,
+      "AP_small": 0.3614281428142814,
+      "num_gt_small": 8,
+      "AP_medium": 0.8811881188118812,
+      "num_gt_medium": 5,
+      "AP_large": 0.9999999999999998,
+      "num_gt_large": 1
+    },
+    {
+      "category_id": 87,
+      "name": "scissors",
+      "num_gt": 2,
+      "AP": 0.10099009900990097,
+      "AP50": 0.5049504950495048,
+      "AP75": 0.0,
+      "AR100": 0.1,
+      "AP_small": 0.19999999999999998,
+      "num_gt_small": 1,
+      "AP_medium": 0.0,
+      "num_gt_medium": 1,
+      "AP_large": null,
+      "num_gt_large": 0
+    },
+    {
+      "category_id": 88,
+      "name": "teddy bear",
+      "num_gt": 4,
+      "AP": 0.7021840419336052,
+      "AP50": 1.0,
+      "AP75": 0.6287128712871287,
+      "AR100": 0.8,
+      "AP_small": null,
+      "num_gt_small": 0,
+      "AP_medium": 0.49999999999999994,
+      "num_gt_medium": 1,
+      "AP_large": 0.7921686362184605,
+      "num_gt_large": 3
+    },
+    {
+      "category_id": 89,
+      "name": "hair drier",
+      "num_gt": 0,
+      "AP": null,
+      "AP50": null,
+      "AP75": null,
+      "AR100": null,
+      "AP_small": null,
+      "num_gt_small": 0,
+      "AP_medium": null,
+      "num_gt_medium": 0,
+      "AP_large": null,
+      "num_gt_large": 0
+    },
+    {
+      "category_id": 90,
+      "name": "toothbrush",
+      "num_gt": 0,
+      "AP": null,
+      "AP50": null,
+      "AP75": null,
+      "AR100": null,
+      "AP_small": null,
+      "num_gt_small": 0,
+      "AP_medium": null,
+      "num_gt_medium": 0,
+      "AP_large": null,
+      "num_gt_large": 0
+    }
+  ],
+  "env": {
+    "python": "3.11.9",
+    "os": "Windows-10-10.0.26300-SP0",
+    "cpu": "Intel(R) Core(TM) Ultra 9 185H",
+    "ram_gb": 31.4,
+    "packages": {
+      "torch": "2.11.0+cu128",
+      "torchvision": "0.26.0+cu128",
+      "ultralytics": "8.4.190",
+      "transformers": "5.21.0",
+      "pycocotools": "2.0.11",
+      "numpy": "2.4.4",
+      "pillow": "12.2.0",
+      "opencv-python": "5.0.0.93"
+    },
+    "nvidia_smi": [
+      {
+        "name": "NVIDIA GeForce RTX 4080 Laptop GPU",
+        "driver_version": "610.88",
+        "memory.total": "12282 MiB",
+        "power.max_limit": "125.00 W",
+        "enforced.power.limit": "90.00 W",
+        "clocks.max.graphics": "3105 MHz"
+      }
+    ],
+    "cuda_available": true,
+    "torch_cuda": "12.8",
+    "cudnn": 91900,
+    "gpus": [
+      {
+        "name": "NVIDIA GeForce RTX 4080 Laptop GPU",
+        "vram_gb": 12.0,
+        "compute_capability": "8.9"
+      }
+    ]
+  }
+}

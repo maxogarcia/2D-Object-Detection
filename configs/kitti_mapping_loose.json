@@ -1,0 +1,23 @@
+{
+  "_comment": [
+    "KITTI -> COCO taxonomy mapping (loose / ablation). Vans count as cars, sitting people and",
+    "cyclist riders count as persons. Compare against kitti_mapping.json to show how much of the",
+    "measured 'domain gap' is really a taxonomy-definition gap."
+  ],
+  "evaluated_categories": [
+    {"id": 1, "name": "person"},
+    {"id": 3, "name": "car"},
+    {"id": 8, "name": "truck"}
+  ],
+  "map": {
+    "Car": "car",
+    "Van": "car",
+    "Pedestrian": "person",
+    "Person_sitting": "person",
+    "Cyclist": "person",
+    "Truck": "truck",
+    "Tram": "ignore",
+    "Misc": "ignore",
+    "DontCare": "ignore"
+  }
+}

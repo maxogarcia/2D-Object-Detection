@@ -1,0 +1,71 @@
+{
+  "command": "python.exe benchmark.py --model yolo11s --dataset coco",
+  "dataset": "coco",
+  "eval_run": "yolo11s",
+  "num_images": 200,
+  "timed_iterations": 200,
+  "image_size_hw_example": [
+    426,
+    640
+  ],
+  "model": {
+    "model": "yolo11s",
+    "family": "YOLO",
+    "framework": "ultralytics 8.4.190",
+    "checkpoint": "yolo11s.pt",
+    "input_resolution": "letterbox, long side 640 (rect, stride-padded)",
+    "conf_thresh": 0.25,
+    "nms_iou": 0.7,
+    "max_det": 100,
+    "fp16": false,
+    "text_prompt": null,
+    "params_M": 9.46
+  },
+  "latency_ms": {
+    "median": 18.617499998072162,
+    "mean": 23.19560749892844,
+    "p90": 26.277889998164028,
+    "min": 11.139900016132742,
+    "std": 19.47556503370608
+  },
+  "fps_from_median": 53.71290453087416,
+  "peak_gpu_mem_allocated_MB": 110.5,
+  "peak_gpu_mem_reserved_MB": 132.0,
+  "notes": "batch=1, end-to-end incl. pre/post-processing, images preloaded; torch allocator stats exclude the CUDA context (~300-500 MB)",
+  "env": {
+    "python": "3.11.9",
+    "os": "Windows-10-10.0.26300-SP0",
+    "cpu": "Intel(R) Core(TM) Ultra 9 185H",
+    "ram_gb": 31.4,
+    "packages": {
+      "torch": "2.11.0+cu128",
+      "torchvision": "0.26.0+cu128",
+      "ultralytics": "8.4.190",
+      "transformers": "5.21.0",
+      "pycocotools": "2.0.11",
+      "numpy": "2.4.4",
+      "pillow": "12.2.0",
+      "opencv-python": "5.0.0.93"
+    },
+    "nvidia_smi": [
+      {
+        "name": "NVIDIA GeForce RTX 4080 Laptop GPU",
+        "driver_version": "610.88",
+        "memory.total": "12282 MiB",
+        "power.max_limit": "125.00 W",
+        "enforced.power.limit": "55.00 W",
+        "clocks.max.graphics": "3105 MHz"
+      }
+    ],
+    "cuda_available": true,
+    "torch_cuda": "12.8",
+    "cudnn": 91900,
+    "gpus": [
+      {
+        "name": "NVIDIA GeForce RTX 4080 Laptop GPU",
+        "vram_gb": 12.0,
+        "compute_capability": "8.9"
+      }
+    ]
+  }
+}

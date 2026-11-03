@@ -1,0 +1,26 @@
+{
+  "_comment": [
+    "KITTI -> COCO taxonomy mapping (default / strict). Follows the spirit of the official KITTI",
+    "protocol, where Van is 'don't care' for Car and Person_sitting is 'don't care' for Pedestrian.",
+    "Values: '<coco name>' = evaluated GT box of that COCO class;",
+    "        'ignore:<coco name>' = crowd/ignore region for that class only (detections there are neither TP nor FP);",
+    "        'ignore' = ignore region for every evaluated class.",
+    "COCO detections of classes not listed in evaluated_categories are dropped by COCOeval (not counted as FP)."
+  ],
+  "evaluated_categories": [
+    {"id": 1, "name": "person"},
+    {"id": 3, "name": "car"},
+    {"id": 8, "name": "truck"}
+  ],
+  "map": {
+    "Car": "car",
+    "Pedestrian": "person",
+    "Truck": "truck",
+    "Van": "ignore:car",
+    "Person_sitting": "ignore:person",
+    "Cyclist": "ignore:person",
+    "Tram": "ignore",
+    "Misc": "ignore",
+    "DontCare": "ignore"
+  }
+}

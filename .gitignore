@@ -1,0 +1,9 @@
+.venv/
+data/
+__pycache__/
+*.pt
+*.pth
+*.ts
+**/detections.json
+weights/
+data_download.log

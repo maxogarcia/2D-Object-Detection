@@ -1,0 +1,336 @@
+>> C:\Users\maxog\Documents\SJSU material\CMPE 249\CMPE 249 Assignments\Track A\.venv\Scripts\python.exe visualize.py --dataset kitti --run yolo11s --worst 12
+{
+  "score_threshold": 0.3,
+  "iou_threshold": 0.5,
+  "per_class": {
+    "car": {
+      "TP": 4538,
+      "FN": 1260,
+      "FP": 685,
+      "recall": 0.783,
+      "precision": 0.869
+    },
+    "truck": {
+      "TP": 64,
+      "FN": 155,
+      "FP": 200,
+      "recall": 0.292,
+      "precision": 0.242
+    },
+    "person": {
+      "TP": 478,
+      "FN": 353,
+      "FP": 142,
+      "recall": 0.575,
+      "precision": 0.771
+    }
+  },
+  "missed_by_box_height": {
+    "h<25px": 352,
+    "25-40px": 515,
+    "40-100px": 691,
+    ">=100px": 210
+  },
+  "missed_by_occlusion": {
+    "0": 364,
+    "1": 495,
+    "2": 845,
+    "3": 64
+  },
+  "drawn_images": [
+    "000135",
+    "001242",
+    "001241",
+    "000435",
+    "001256",
+    "000115",
+    "000918",
+    "001038",
+    "001119",
+    "001173",
+    "000347",
+    "000566"
+  ]
+}
+
+Drew 12 images into results\kitti\yolo11s\failures
+>> C:\Users\maxog\Documents\SJSU material\CMPE 249\CMPE 249 Assignments\Track A\.venv\Scripts\python.exe visualize.py --dataset kitti --run rtdetr-l --worst 12
+{
+  "score_threshold": 0.3,
+  "iou_threshold": 0.5,
+  "per_class": {
+    "car": {
+      "TP": 5012,
+      "FN": 786,
+      "FP": 1586,
+      "recall": 0.864,
+      "precision": 0.76
+    },
+    "truck": {
+      "TP": 135,
+      "FN": 84,
+      "FP": 895,
+      "recall": 0.616,
+      "precision": 0.131
+    },
+    "person": {
+      "TP": 546,
+      "FN": 285,
+      "FP": 433,
+      "recall": 0.657,
+      "precision": 0.558
+    }
+  },
+  "missed_by_box_height": {
+    "h<25px": 127,
+    "25-40px": 314,
+    "40-100px": 542,
+    ">=100px": 172
+  },
+  "missed_by_occlusion": {
+    "0": 210,
+    "1": 224,
+    "2": 678,
+    "3": 43
+  },
+  "drawn_images": [
+    "001119",
+    "001066",
+    "001363",
+    "000918",
+    "001038",
+    "000211",
+    "001022",
+    "001173",
+    "001256",
+    "001190",
+    "000435",
+    "000503"
+  ]
+}
+
+Drew 12 images into results\kitti\rtdetr-l\failures
+>> C:\Users\maxog\Documents\SJSU material\CMPE 249\CMPE 249 Assignments\Track A\.venv\Scripts\python.exe visualize.py --dataset kitti --run fasterrcnn_r50_fpn_v2 --worst 12
+{
+  "score_threshold": 0.3,
+  "iou_threshold": 0.5,
+  "per_class": {
+    "car": {
+      "TP": 5092,
+      "FN": 706,
+      "FP": 2978,
+      "recall": 0.878,
+      "precision": 0.631
+    },
+    "truck": {
+      "TP": 124,
+      "FN": 95,
+      "FP": 521,
+      "recall": 0.566,
+      "precision": 0.192
+    },
+    "person": {
+      "TP": 614,
+      "FN": 217,
+      "FP": 1356,
+      "recall": 0.739,
+      "precision": 0.312
+    }
+  },
+  "missed_by_box_height": {
+    "h<25px": 90,
+    "25-40px": 282,
+    "40-100px": 481,
+    ">=100px": 165
+  },
+  "missed_by_occlusion": {
+    "0": 175,
+    "1": 168,
+    "2": 634,
+    "3": 41
+  },
+  "drawn_images": [
+    "000435",
+    "000187",
+    "001038",
+    "001066",
+    "001190",
+    "001022",
+    "001119",
+    "001278",
+    "001067",
+    "000608",
+    "001256",
+    "000812"
+  ]
+}
+
+Drew 12 images into results\kitti\fasterrcnn_r50_fpn_v2\failures
+>> C:\Users\maxog\Documents\SJSU material\CMPE 249\CMPE 249 Assignments\Track A\.venv\Scripts\python.exe visualize.py --dataset kitti --run fcos_r50_fpn --worst 12
+{
+  "score_threshold": 0.3,
+  "iou_threshold": 0.5,
+  "per_class": {
+    "truck": {
+      "TP": 174,
+      "FN": 45,
+      "FP": 2770,
+      "recall": 0.795,
+      "precision": 0.059
+    },
+    "car": {
+      "TP": 5134,
+      "FN": 664,
+      "FP": 5345,
+      "recall": 0.885,
+      "precision": 0.49
+    },
+    "person": {
+      "TP": 609,
+      "FN": 222,
+      "FP": 2682,
+      "recall": 0.733,
+      "precision": 0.185
+    }
+  },
+  "missed_by_box_height": {
+    "h<25px": 114,
+    "25-40px": 245,
+    "40-100px": 416,
+    ">=100px": 156
+  },
+  "missed_by_occlusion": {
+    "0": 139,
+    "1": 189,
+    "2": 564,
+    "3": 39
+  },
+  "drawn_images": [
+    "001038",
+    "001363",
+    "001066",
+    "000950",
+    "000608",
+    "000919",
+    "001190",
+    "000812",
+    "000115",
+    "000575",
+    "001249",
+    "001053"
+  ]
+}
+
+Drew 12 images into results\kitti\fcos_r50_fpn\failures
+>> C:\Users\maxog\Documents\SJSU material\CMPE 249\CMPE 249 Assignments\Track A\.venv\Scripts\python.exe visualize.py --dataset kitti --run yolo-world-s --worst 12
+{
+  "score_threshold": 0.3,
+  "iou_threshold": 0.5,
+  "per_class": {
+    "truck": {
+      "TP": 127,
+      "FN": 92,
+      "FP": 136,
+      "recall": 0.58,
+      "precision": 0.483
+    },
+    "car": {
+      "TP": 3018,
+      "FN": 2780,
+      "FP": 79,
+      "recall": 0.521,
+      "precision": 0.974
+    },
+    "person": {
+      "TP": 403,
+      "FN": 428,
+      "FP": 169,
+      "recall": 0.485,
+      "precision": 0.705
+    }
+  },
+  "missed_by_box_height": {
+    "h<25px": 657,
+    "25-40px": 992,
+    "40-100px": 1331,
+    ">=100px": 320
+  },
+  "missed_by_occlusion": {
+    "0": 806,
+    "1": 1089,
+    "2": 1312,
+    "3": 93
+  },
+  "drawn_images": [
+    "000435",
+    "001190",
+    "000935",
+    "001242",
+    "000381",
+    "000981",
+    "001015",
+    "000918",
+    "000119",
+    "000135",
+    "000364",
+    "000458"
+  ]
+}
+
+Drew 12 images into results\kitti\yolo-world-s\failures
+>> C:\Users\maxog\Documents\SJSU material\CMPE 249\CMPE 249 Assignments\Track A\.venv\Scripts\python.exe visualize.py --dataset kitti --run gdino-tiny --worst 12
+{
+  "score_threshold": 0.3,
+  "iou_threshold": 0.5,
+  "per_class": {
+    "truck": {
+      "TP": 197,
+      "FN": 22,
+      "FP": 1039,
+      "recall": 0.9,
+      "precision": 0.159
+    },
+    "car": {
+      "TP": 4964,
+      "FN": 834,
+      "FP": 1485,
+      "recall": 0.856,
+      "precision": 0.77
+    },
+    "person": {
+      "TP": 621,
+      "FN": 210,
+      "FP": 1062,
+      "recall": 0.747,
+      "precision": 0.369
+    }
+  },
+  "missed_by_box_height": {
+    "h<25px": 105,
+    "25-40px": 272,
+    "40-100px": 513,
+    ">=100px": 176
+  },
+  "missed_by_occlusion": {
+    "0": 157,
+    "1": 199,
+    "2": 665,
+    "3": 45
+  },
+  "drawn_images": [
+    "001256",
+    "000435",
+    "000187",
+    "001038",
+    "001015",
+    "000608",
+    "001022",
+    "001119",
+    "001363",
+    "000950",
+    "001242",
+    "000947"
+  ]
+}
+
+Drew 12 images into results\kitti\gdino-tiny\failures

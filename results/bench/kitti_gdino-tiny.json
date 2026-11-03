@@ -1,0 +1,74 @@
+{
+  "command": "python.exe benchmark.py --model gdino-tiny --dataset kitti",
+  "dataset": "kitti",
+  "eval_run": "gdino-tiny",
+  "num_images": 200,
+  "timed_iterations": 200,
+  "image_size_hw_example": [
+    375,
+    1242
+  ],
+  "model": {
+    "model": "gdino-tiny",
+    "family": "Open-vocab",
+    "framework": "transformers 5.21.0",
+    "checkpoint": "IDEA-Research/grounding-dino-tiny",
+    "input_resolution": "processor default (short side 800, long side <= 1333)",
+    "conf_thresh": 0.25,
+    "nms_iou": "none",
+    "max_det": 100,
+    "fp16": false,
+    "scoring": "class score = mean sigmoid over the class name's tokens; top-k over queries x classes (as in the official Grounding DINO COCO evaluation)",
+    "text_prompts": [
+      "person. car. truck."
+    ],
+    "params_M": 172.25
+  },
+  "latency_ms": {
+    "median": 204.6177500160411,
+    "mean": 207.09309850179125,
+    "p90": 219.56930003361776,
+    "min": 189.85339999198914,
+    "std": 11.026921537132226
+  },
+  "fps_from_median": 4.887161548407235,
+  "peak_gpu_mem_allocated_MB": 1367.3,
+  "peak_gpu_mem_reserved_MB": 1630.0,
+  "notes": "batch=1, end-to-end incl. pre/post-processing, images preloaded; torch allocator stats exclude the CUDA context (~300-500 MB)",
+  "env": {
+    "python": "3.11.9",
+    "os": "Windows-10-10.0.26300-SP0",
+    "cpu": "Intel(R) Core(TM) Ultra 9 185H",
+    "ram_gb": 31.4,
+    "packages": {
+      "torch": "2.11.0+cu128",
+      "torchvision": "0.26.0+cu128",
+      "ultralytics": "8.4.190",
+      "transformers": "5.21.0",
+      "pycocotools": "2.0.11",
+      "numpy": "2.4.4",
+      "pillow": "12.2.0",
+      "opencv-python": "5.0.0.93"
+    },
+    "nvidia_smi": [
+      {
+        "name": "NVIDIA GeForce RTX 4080 Laptop GPU",
+        "driver_version": "610.88",
+        "memory.total": "12282 MiB",
+        "power.max_limit": "125.00 W",
+        "enforced.power.limit": "55.00 W",
+        "clocks.max.graphics": "3105 MHz"
+      }
+    ],
+    "cuda_available": true,
+    "torch_cuda": "12.8",
+    "cudnn": 91900,
+    "gpus": [
+      {
+        "name": "NVIDIA GeForce RTX 4080 Laptop GPU",
+        "vram_gb": 12.0,
+        "compute_capability": "8.9"
+      }
+    ]
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "command": "python.exe benchmark.py --model rtdetr-l --dataset kitti",
+  "dataset": "kitti",
+  "eval_run": "rtdetr-l",
+  "num_images": 200,
+  "timed_iterations": 200,
+  "image_size_hw_example": [
+    375,
+    1242
+  ],
+  "model": {
+    "model": "rtdetr-l",
+    "family": "DETR",
+    "framework": "ultralytics 8.4.190",
+    "checkpoint": "rtdetr-l.pt",
+    "input_resolution": "letterbox, long side 640 (rect, stride-padded)",
+    "conf_thresh": 0.25,
+    "nms_iou": "none (set prediction, NMS-free)",
+    "max_det": 100,
+    "fp16": false,
+    "text_prompt": null,
+    "params_M": 32.97
+  },
+  "latency_ms": {
+    "median": 43.20690000895411,
+    "mean": 44.238400999456644,
+    "p90": 49.04582996387035,
+    "min": 37.392200028989464,
+    "std": 5.197559893937424
+  },
+  "fps_from_median": 23.14445146013165,
+  "peak_gpu_mem_allocated_MB": 238.6,
+  "peak_gpu_mem_reserved_MB": 314.0,
+  "notes": "batch=1, end-to-end incl. pre/post-processing, images preloaded; torch allocator stats exclude the CUDA context (~300-500 MB)",
+  "env": {
+    "python": "3.11.9",
+    "os": "Windows-10-10.0.26300-SP0",
+    "cpu": "Intel(R) Core(TM) Ultra 9 185H",
+    "ram_gb": 31.4,
+    "packages": {
+      "torch": "2.11.0+cu128",
+      "torchvision": "0.26.0+cu128",
+      "ultralytics": "8.4.190",
+      "transformers": "5.21.0",
+      "pycocotools": "2.0.11",
+      "numpy": "2.4.4",
+      "pillow": "12.2.0",
+      "opencv-python": "5.0.0.93"
+    },
+    "nvidia_smi": [
+      {
+        "name": "NVIDIA GeForce RTX 4080 Laptop GPU",
+        "driver_version": "610.88",
+        "memory.total": "12282 MiB",
+        "power.max_limit": "125.00 W",
+        "enforced.power.limit": "55.00 W",
+        "clocks.max.graphics": "3105 MHz"
+      }
+    ],
+    "cuda_available": true,
+    "torch_cuda": "12.8",
+    "cudnn": 91900,
+    "gpus": [
+      {
+        "name": "NVIDIA GeForce RTX 4080 Laptop GPU",
+        "vram_gb": 12.0,
+        "compute_capability": "8.9"
+      }
+    ]
+  }
+}

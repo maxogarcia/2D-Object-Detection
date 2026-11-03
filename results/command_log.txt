@@ -1,0 +1,60 @@
+[2026-10-26T17:23:31] python.exe evaluate.py --model yolo11s --dataset coco --max-images 200
+[2026-10-26T17:23:56] python.exe evaluate.py --model rtdetr-l --dataset coco --max-images 200
+[2026-10-26T17:24:21] python.exe evaluate.py --model fasterrcnn_r50_fpn_v2 --dataset coco --max-images 200
+[2026-10-26T17:25:07] python.exe evaluate.py --model fcos_r50_fpn --dataset coco --max-images 200
+[2026-10-26T17:25:46] python.exe evaluate.py --model yolo-world-s --dataset coco --max-images 200
+[2026-10-26T17:27:08] python.exe evaluate.py --model gdino-tiny --dataset coco --max-images 200
+[2026-10-26T17:54:30] python.exe evaluate.py --model gdino-tiny --dataset coco --max-images 200
+[2026-10-26T18:07:03] python.exe evaluate.py --model gdino-tiny --dataset coco --max-images 200
+[2026-10-26T18:20:33] python.exe evaluate.py --model gdino-tiny --dataset coco --max-images 20 --run-name gdino_t20
+[2026-10-26T18:21:57] python.exe evaluate.py --model gdino-tiny --dataset coco --max-images 200
+[2026-10-26T18:32:18] python.exe evaluate.py --model yolo11s --dataset kitti --max-images 200
+[2026-10-26T18:32:48] python.exe evaluate.py --model rtdetr-l --dataset kitti --max-images 200
+[2026-10-26T18:33:37] python.exe evaluate.py --model fasterrcnn_r50_fpn_v2 --dataset kitti --max-images 200
+[2026-10-26T18:34:14] python.exe evaluate.py --model fcos_r50_fpn --dataset kitti --max-images 200
+[2026-10-26T18:34:54] python.exe evaluate.py --model yolo-world-s --dataset kitti --max-images 200
+[2026-10-26T18:35:26] python.exe evaluate.py --model gdino-tiny --dataset kitti --max-images 200
+[2026-10-26T18:37:22] python.exe evaluate.py --model yolo11s --dataset kitti-loose --max-images 200
+[2026-10-26T18:37:52] python.exe evaluate.py --model fasterrcnn_r50_fpn_v2 --dataset kitti-loose --max-images 200
+[2026-10-26T18:38:30] python.exe evaluate.py --model yolo11s --dataset kitti --imgsz 1280 --run-name yolo11s_1280 --max-images 200
+[2026-10-26T18:39:17] python.exe evaluate.py --model rtdetr-l --dataset kitti --imgsz 1280 --run-name rtdetr-l_1280 --max-images 200
+# ---- full run started 2026-11-02T19:53:00-08:00 (entries above are the 200-image quick run) ----
+[2026-11-02T19:53:23] python.exe evaluate.py --model yolo11s --dataset coco
+[2026-11-02T19:57:55] python.exe evaluate.py --model rtdetr-l --dataset coco
+[2026-11-02T20:03:20] python.exe evaluate.py --model fasterrcnn_r50_fpn_v2 --dataset coco
+[2026-11-02T20:11:18] python.exe evaluate.py --model fcos_r50_fpn --dataset coco
+[2026-11-02T20:17:50] python.exe evaluate.py --model yolo-world-s --dataset coco
+[2026-11-02T20:20:43] python.exe evaluate.py --model gdino-tiny --dataset coco --max-images 1000
+[2026-11-02T20:46:00] python.exe evaluate.py --model yolo11s --dataset kitti
+[2026-11-02T20:47:06] python.exe evaluate.py --model rtdetr-l --dataset kitti
+[2026-11-02T20:49:01] python.exe evaluate.py --model fasterrcnn_r50_fpn_v2 --dataset kitti
+[2026-11-02T20:51:03] python.exe evaluate.py --model fcos_r50_fpn --dataset kitti
+[2026-11-02T20:53:06] python.exe evaluate.py --model yolo-world-s --dataset kitti
+[2026-11-02T20:54:16] python.exe evaluate.py --model gdino-tiny --dataset kitti
+[2026-11-02T21:00:21] python.exe evaluate.py --model yolo11s --dataset kitti-loose
+[2026-11-02T21:01:37] python.exe evaluate.py --model fasterrcnn_r50_fpn_v2 --dataset kitti-loose
+[2026-11-02T21:03:53] python.exe evaluate.py --model yolo11s --dataset kitti --imgsz 1280 --run-name yolo11s_1280
+[2026-11-02T21:05:14] python.exe evaluate.py --model rtdetr-l --dataset kitti --imgsz 1280 --run-name rtdetr-l_1280
+[2026-11-02T21:08:14] python.exe benchmark.py --model yolo11s --dataset coco
+[2026-11-02T21:08:28] python.exe benchmark.py --model yolo11s --dataset coco --half
+[2026-11-02T21:09:26] python.exe benchmark.py --model rtdetr-l --dataset coco
+[2026-11-02T21:09:47] python.exe benchmark.py --model rtdetr-l --dataset coco --half
+[2026-11-02T21:10:05] python.exe benchmark.py --model fasterrcnn_r50_fpn_v2 --dataset coco
+[2026-11-02T21:10:34] python.exe benchmark.py --model fasterrcnn_r50_fpn_v2 --dataset coco --half
+[2026-11-02T21:10:57] python.exe benchmark.py --model fcos_r50_fpn --dataset coco
+[2026-11-02T21:11:21] python.exe benchmark.py --model fcos_r50_fpn --dataset coco --half
+[2026-11-02T21:11:47] python.exe benchmark.py --model yolo-world-s --dataset coco
+[2026-11-02T21:12:09] python.exe benchmark.py --model yolo-world-s --dataset coco --half
+[2026-11-02T21:12:33] python.exe benchmark.py --model gdino-tiny --dataset coco
+[2026-11-02T21:17:55] python.exe benchmark.py --model yolo11s --dataset kitti
+[2026-11-02T21:18:09] python.exe benchmark.py --model yolo11s --dataset kitti --half
+[2026-11-02T21:18:26] python.exe benchmark.py --model rtdetr-l --dataset kitti
+[2026-11-02T21:18:46] python.exe benchmark.py --model rtdetr-l --dataset kitti --half
+[2026-11-02T21:19:08] python.exe benchmark.py --model fasterrcnn_r50_fpn_v2 --dataset kitti
+[2026-11-02T21:19:31] python.exe benchmark.py --model fasterrcnn_r50_fpn_v2 --dataset kitti --half
+[2026-11-02T21:19:49] python.exe benchmark.py --model fcos_r50_fpn --dataset kitti
+[2026-11-02T21:20:07] python.exe benchmark.py --model fcos_r50_fpn --dataset kitti --half
+[2026-11-02T21:20:27] python.exe benchmark.py --model yolo-world-s --dataset kitti
+[2026-11-02T21:20:43] python.exe benchmark.py --model yolo-world-s --dataset kitti --half
+[2026-11-02T21:21:00] python.exe benchmark.py --model gdino-tiny --dataset kitti
+[2026-11-02T21:22:01] python.exe benchmark.py --model yolo11s --dataset kitti --imgsz 1280 --run-name yolo11s_1280 --eval-run yolo11s_1280

@@ -1,0 +1,135 @@
+{
+  "command": "python.exe evaluate.py --model fasterrcnn_r50_fpn_v2 --dataset kitti-loose --max-images 200",
+  "dataset": {
+    "name": "kitti-loose",
+    "annotations": "data\\kitti\\annotations\\kitti_val_loose_coco.json",
+    "images": "data\\kitti\\training\\image_2",
+    "split": "KITTI 2D object, val split (seed 42, val_frac 0.2) of the official training set, mapped with kitti_mapping_loose.json",
+    "num_images": 200,
+    "evaluated_categories": [
+      {
+        "id": 1,
+        "name": "person"
+      },
+      {
+        "id": 3,
+        "name": "car"
+      },
+      {
+        "id": 8,
+        "name": "truck"
+      }
+    ]
+  },
+  "model": {
+    "model": "fasterrcnn_r50_fpn_v2",
+    "family": "R-CNN",
+    "framework": "torchvision 0.26.0+cu128",
+    "checkpoint": "FasterRCNN_ResNet50_FPN_V2_Weights.COCO_V1",
+    "input_resolution": "resize short side 800, long side <= 1333",
+    "conf_thresh": 0.001,
+    "nms_iou": 0.5,
+    "max_det": 100,
+    "fp16": false,
+    "params_M": 43.71
+  },
+  "eval_wall_time_s": 20.7,
+  "eval_ms_per_image_incl_io": 103.3,
+  "stats": {
+    "AP": 0.2830063972056435,
+    "AP50": 0.5159660602089277,
+    "AP75": 0.2839527658305586,
+    "AP_small": 0.2234640738966178,
+    "AP_medium": 0.2555825894732487,
+    "AP_large": 0.44225025949346347,
+    "AR1": 0.24861614185650283,
+    "AR10": 0.4973164917299454,
+    "AR100": 0.5226943059674808,
+    "AR_small": 0.5884412535820988,
+    "AR_medium": 0.4809426971133132,
+    "AR_large": 0.5573536113009798
+  },
+  "per_class": [
+    {
+      "category_id": 1,
+      "name": "person",
+      "num_gt": 138,
+      "AP": 0.21137964580381885,
+      "AP50": 0.5249127705650728,
+      "AP75": 0.14058268298209298,
+      "AR100": 0.327536231884058,
+      "AP_small": 0.1199596337332841,
+      "num_gt_small": 44,
+      "AP_medium": 0.2141084814925354,
+      "num_gt_medium": 75,
+      "AP_large": 0.42146594911592006,
+      "num_gt_large": 19
+    },
+    {
+      "category_id": 3,
+      "name": "car",
+      "num_gt": 795,
+      "AP": 0.48432912023064273,
+      "AP50": 0.8212969828890394,
+      "AP75": 0.5251643635229509,
+      "AR100": 0.5982389937106919,
+      "AP_small": 0.401193265523186,
+      "num_gt_small": 142,
+      "AP_medium": 0.46967091967355995,
+      "num_gt_medium": 422,
+      "AP_large": 0.5707472915770785,
+      "num_gt_large": 231
+    },
+    {
+      "category_id": 8,
+      "name": "truck",
+      "num_gt": 26,
+      "AP": 0.15331042558246907,
+      "AP50": 0.20168842717267074,
+      "AP75": 0.186111250986632,
+      "AR100": 0.6423076923076922,
+      "AP_small": 0.14923932243338311,
+      "num_gt_small": 7,
+      "AP_medium": 0.08296836725365071,
+      "num_gt_medium": 11,
+      "AP_large": 0.33453753778739215,
+      "num_gt_large": 8
+    }
+  ],
+  "env": {
+    "python": "3.11.9",
+    "os": "Windows-10-10.0.26300-SP0",
+    "cpu": "Intel(R) Core(TM) Ultra 9 185H",
+    "ram_gb": 31.4,
+    "packages": {
+      "torch": "2.11.0+cu128",
+      "torchvision": "0.26.0+cu128",
+      "ultralytics": "8.4.190",
+      "transformers": "5.21.0",
+      "pycocotools": "2.0.11",
+      "numpy": "2.4.4",
+      "pillow": "12.2.0",
+      "opencv-python": "5.0.0.93"
+    },
+    "nvidia_smi": [
+      {
+        "name": "NVIDIA GeForce RTX 4080 Laptop GPU",
+        "driver_version": "610.88",
+        "memory.total": "12282 MiB",
+        "power.max_limit": "125.00 W",
+        "enforced.power.limit": "55.00 W",
+        "clocks.max.graphics": "3105 MHz"
+      }
+    ],
+    "cuda_available": true,
+    "torch_cuda": "12.8",
+    "cudnn": 91900,
+    "gpus": [
+      {
+        "name": "NVIDIA GeForce RTX 4080 Laptop GPU",
+        "vram_gb": 12.0,
+        "compute_capability": "8.9"
+      }
+    ]
+  }
+}

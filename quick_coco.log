@@ -1,0 +1,2082 @@
+﻿>> C:\Users\maxog\Documents\SJSU material\CMPE 249\CMPE 249 Assignments\Track A\.venv\Scripts\python.exe env_info.py
+{
+  "python": "3.11.9",
+  "os": "Windows-10-10.0.26300-SP0",
+  "cpu": "Intel(R) Core(TM) Ultra 9 185H",
+  "ram_gb": 31.4,
+  "packages": {
+    "torch": "2.11.0+cu128",
+    "torchvision": "0.26.0+cu128",
+    "ultralytics": "8.4.190",
+    "transformers": "5.21.0",
+    "pycocotools": "2.0.11",
+    "numpy": "2.4.4",
+    "pillow": "12.2.0",
+    "opencv-python": "5.0.0.93"
+  },
+  "nvidia_smi": [
+    {
+      "name": "NVIDIA GeForce RTX 4080 Laptop GPU",
+      "driver_version": "610.88",
+      "memory.total": "12282 MiB",
+      "power.max_limit": "125.00 W",
+      "enforced.power.limit": "90.00 W",
+      "clocks.max.graphics": "3105 MHz"
+    }
+  ],
+  "cuda_available": true,
+  "torch_cuda": "12.8",
+  "cudnn": 91900,
+  "gpus": [
+    {
+      "name": "NVIDIA GeForce RTX 4080 Laptop GPU",
+      "vram_gb": 12.0,
+      "compute_capability": "8.9"
+    }
+  ]
+}
+
+Wrote results\env.json and results\pip_freeze.txt
+>> C:\Users\maxog\Documents\SJSU material\CMPE 249\CMPE 249 Assignments\Track A\.venv\Scripts\python.exe evaluate.py --model yolo11s --dataset coco --max-images 200
+
+[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolo11s.pt to 'yolo11s.pt': 1% ──────────── 207.5KB/18.4MB 1.8MB/s 0.1s<10.0s
+[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolo11s.pt to 'yolo11s.pt': 2% ──────────── 490.4KB/18.4MB 2.5MB/s 0.2s<7.3s
+[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolo11s.pt to 'yolo11s.pt': 5% ╸─────────── 999.6KB/18.4MB 4.1MB/s 0.3s<4.2s
+[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolo11s.pt to 'yolo11s.pt': 8% ━─────────── 1.6/18.4MB 6.5MB/s 0.4s<2.6s
+[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolo11s.pt to 'yolo11s.pt': 12% ━╸────────── 2.4/18.4MB 6.2MB/s 0.6s<2.6s
+[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolo11s.pt to 'yolo11s.pt': 18% ━━────────── 3.5/18.4MB 10.8MB/s 0.7s<1.4s
+[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolo11s.pt to 'yolo11s.pt': 23% ━━╸───────── 4.3/18.4MB 8.4MB/s 0.8s<1.7s
+[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolo11s.pt to 'yolo11s.pt': 30% ━━━╸──────── 5.5/18.4MB 12.0MB/s 0.9s<1.1s
+[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolo11s.pt to 'yolo11s.pt': 37% ━━━━──────── 6.9/18.4MB 11.2MB/s 1.0s<1.0s
+[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolo11s.pt to 'yolo11s.pt': 46% ━━━━━╸────── 8.5/18.4MB 16.1MB/s 1.1s<0.6s
+[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolo11s.pt to 'yolo11s.pt': 50% ━━━━━━────── 9.4/18.4MB 8.6MB/s 1.2s<1.1s
+[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolo11s.pt to 'yolo11s.pt': 62% ━━━━━━━╸──── 11.6/18.4MB 16.5MB/s 1.3s<0.4s
+[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolo11s.pt to 'yolo11s.pt': 71% ━━━━━━━━╸─── 13.2/18.4MB 13.5MB/s 1.4s<0.4s
+[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolo11s.pt to 'yolo11s.pt': 84% ━━━━━━━━━━── 15.7/18.4MB 24.4MB/s 1.5s<0.1s
+[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolo11s.pt to 'yolo11s.pt': 97% ━━━━━━━━━━━╸ 18.0/18.4MB 21.8MB/s 1.7s<0.0s
+[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolo11s.pt to 'yolo11s.pt': 100% ━━━━━━━━━━━━ 18.4MB 11.1MB/s 1.7s
+Evaluating yolo11s on coco: 200 images -> results\coco\yolo11s
+.\.venv\Scripts\python.exe : 
+At line:1 char:302
++ ... tch {} } }; .\.venv\Scripts\python.exe -u run_experiments.py --quick  ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo11s:   0%|          | 0/200 [00:00<?, ?it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo11s:   0%|          | 1/200 [00:03<13:13,  3.99s/it]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo11s:   1%|          | 2/200 [00:04<05:40,  1.72s/it]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo11s:   2%|▏         | 3/200 [00:04<03:14,  1.01it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo11s:   2%|▏         | 4/200 [00:04<02:06,  1.55it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo11s:   2%|▎         | 5/200 [00:04<01:28,  2.19it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo11s:   4%|▍         | 8/200 [00:04<00:41,  4.65it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo11s:   5%|▌         | 10/200 [00:04<00:31,  6.03it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo11s:   6%|▋         | 13/200 [00:04<00:20,  9.24it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo11s:   8%|▊         | 15/200 [00:05<00:18, 10.19it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo11s:   9%|▉         | 18/200 [00:05<00:13, 13.68it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo11s:  11%|█         | 22/200 [00:05<00:09, 18.49it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo11s:  12%|█▎        | 25/200 [00:05<00:08, 20.71it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo11s:  14%|█▍        | 28/200 [00:05<00:10, 17.16it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo11s:  16%|█▌        | 31/200 [00:05<00:09, 17.95it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo11s:  17%|█▋        | 34/200 [00:06<00:11, 13.94it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo11s:  18%|█▊        | 36/200 [00:06<00:11, 14.67it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo11s:  20%|█▉        | 39/200 [00:06<00:09, 16.70it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo11s:  22%|██▏       | 43/200 [00:06<00:07, 20.24it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo11s:  23%|██▎       | 46/200 [00:06<00:07, 21.93it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo11s:  24%|██▍       | 49/200 [00:06<00:06, 23.61it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo11s:  26%|██▌       | 52/200 [00:06<00:07, 20.72it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo11s:  28%|██▊       | 55/200 [00:07<00:07, 19.22it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo11s:  29%|██▉       | 58/200 [00:07<00:07, 18.04it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo11s:  30%|███       | 60/200 [00:07<00:08, 17.29it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo11s:  32%|███▏      | 63/200 [00:07<00:06, 19.91it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo11s:  33%|███▎      | 66/200 [00:07<00:06, 21.67it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo11s:  34%|███▍      | 69/200 [00:07<00:05, 22.92it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo11s:  36%|███▌      | 72/200 [00:07<00:05, 24.01it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo11s:  38%|███▊      | 75/200 [00:07<00:05, 23.01it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo11s:  39%|███▉      | 78/200 [00:08<00:05, 23.63it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo11s:  40%|████      | 81/200 [00:08<00:04, 25.05it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo11s:  42%|████▏     | 84/200 [00:08<00:05, 20.70it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo11s:  44%|████▎     | 87/200 [00:08<00:05, 21.72it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo11s:  45%|████▌     | 90/200 [00:08<00:04, 22.50it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo11s:  46%|████▋     | 93/200 [00:08<00:05, 18.31it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo11s:  48%|████▊     | 96/200 [00:09<00:07, 14.56it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo11s:  50%|████▉     | 99/200 [00:09<00:06, 16.33it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo11s:  50%|█████     | 101/200 [00:09<00:06, 16.34it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo11s:  52%|█████▏    | 104/200 [00:09<00:05, 18.33it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo11s:  54%|█████▎    | 107/200 [00:09<00:04, 20.37it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo11s:  55%|█████▌    | 110/200 [00:09<00:04, 18.25it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo11s:  56%|█████▋    | 113/200 [00:09<00:04, 19.86it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo11s:  58%|█████▊    | 116/200 [00:10<00:04, 20.65it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo11s:  60%|█████▉    | 119/200 [00:10<00:03, 22.19it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo11s:  61%|██████    | 122/200 [00:10<00:03, 19.62it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo11s:  62%|██████▎   | 125/200 [00:10<00:03, 20.42it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo11s:  64%|██████▍   | 128/200 [00:10<00:03, 19.82it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo11s:  66%|██████▌   | 131/200 [00:10<00:03, 21.53it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo11s:  67%|██████▋   | 134/200 [00:10<00:02, 22.37it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo11s:  68%|██████▊   | 137/200 [00:11<00:03, 20.57it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo11s:  70%|███████   | 140/200 [00:11<00:02, 20.87it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo11s:  72%|███████▏  | 143/200 [00:11<00:02, 22.20it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo11s:  73%|███████▎  | 146/200 [00:11<00:02, 22.33it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo11s:  74%|███████▍  | 149/200 [00:11<00:02, 20.97it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo11s:  76%|███████▌  | 152/200 [00:11<00:02, 17.27it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo11s:  78%|███████▊  | 155/200 [00:12<00:02, 18.62it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo11s:  78%|███████▊  | 157/200 [00:12<00:02, 18.48it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo11s:  80%|████████  | 160/200 [00:12<00:02, 19.50it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo11s:  82%|████████▏ | 163/200 [00:12<00:01, 18.85it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo11s:  83%|████████▎ | 166/200 [00:12<00:01, 20.21it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo11s:  84%|████████▍ | 169/200 [00:12<00:01, 20.53it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo11s:  86%|████████▌ | 172/200 [00:12<00:01, 18.76it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo11s:  87%|████████▋ | 174/200 [00:13<00:01, 16.88it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo11s:  88%|████████▊ | 177/200 [00:13<00:01, 18.53it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo11s:  90%|█████████ | 180/200 [00:13<00:01, 17.32it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo11s:  91%|█████████ | 182/200 [00:13<00:01, 12.50it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo11s:  92%|█████████▏| 184/200 [00:13<00:01, 12.45it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo11s:  94%|█████████▎| 187/200 [00:13<00:00, 15.14it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo11s:  95%|█████████▌| 190/200 [00:14<00:00, 17.31it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo11s:  96%|█████████▋| 193/200 [00:14<00:00, 19.12it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo11s:  98%|█████████▊| 196/200 [00:14<00:00, 21.15it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo11s: 100%|█████████▉| 199/200 [00:14<00:00, 21.67it/s]
+yolo11s: 100%|██████████| 200/200 [00:14<00:00, 13.77it/s]
+Loading and preparing results...
+DONE (t=0.01s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=1.02s).
+Accumulating evaluation results...
+DONE (t=0.37s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.496
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.652
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.546
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.335
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.540
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.717
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.409
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.617
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.639
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.435
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.651
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.835
+
+class              #gt     AP   AP50    APs    APm    APl
+person             504  0.592  0.832  0.366  0.671  0.814
+bicycle             11  0.589  0.773  0.800  0.545  0.804
+car                 46  0.470  0.640  0.361  0.661  0.641
+motorcycle          21  0.680  0.934  0.352  0.716  0.837
+airplane             6  0.666  0.812  0.602  0.511  1.000
+bus                 25  0.512  0.737  0.441  0.437  0.764
+train                5  0.703  0.802    n/a    n/a  0.703
+truck               15  0.345  0.469  0.244  0.327  0.950
+boat                 7  0.185  0.311  0.005  0.341    n/a
+traffic light       15  0.309  0.519  0.292  0.503  0.500
+fire hydrant         5  0.723  0.802  0.700  0.454  1.000
+stop sign            4  0.942  1.000  0.900  0.950  1.000
+bench               15  0.458  0.729  0.602  0.583  0.117
+bird                11  0.327  0.459  0.387  0.355    n/a
+cat                  7  0.820  1.000    n/a  1.000  0.798
+dog                  2  0.900  1.000    n/a  0.900  0.900
+horse                9  0.676  0.869  0.202  0.727  0.934
+sheep               10  0.701  0.871    n/a  0.850  0.665
+cow                  4  0.262  0.306  0.193    n/a  0.500
+elephant             6  0.704  0.822    n/a  0.718  0.738
+bear                 3  0.944  1.000    n/a    n/a  0.944
+zebra               11  0.879  0.985  0.167  0.950  0.925
+giraffe              1  1.000  1.000    n/a    n/a  1.000
+backpack            27  0.159  0.253  0.180  0.192    n/a
+umbrella             7  0.389  0.532  0.118  0.417  0.802
+handbag             21  0.247  0.359  0.142  0.291  0.467
+tie                 24  0.360  0.533  0.096  0.708  0.784
+suitcase             4  0.827  1.000    n/a  0.750  0.901
+frisbee              9  0.837  1.000  0.900  0.877  0.701
+skis                 5  0.600  0.857  0.643  0.526    n/a
+sports ball          4  0.225  0.629  0.325  0.000    n/a
+kite                19  0.482  0.695  0.712  0.377  0.983
+baseball bat         4  0.418  0.835  0.627    n/a    n/a
+baseball glove       6  0.636  0.933  0.799  0.559    n/a
+skateboard           6  0.641  0.804  0.353  0.855  0.700
+surfboard           10  0.443  0.635  0.500  0.610  0.303
+tennis racket        6  0.576  0.878  0.441  0.705    n/a
+bottle              31  0.225  0.367  0.172  0.440    n/a
+wine glass          32  0.372  0.604  0.144  0.587  1.000
+cup                 49  0.540  0.676  0.359  0.650  0.777
+fork                12  0.350  0.436  0.217  0.535  0.900
+knife               21  0.369  0.528  0.180  0.608  0.424
+spoon               13  0.180  0.290  0.058  0.411    n/a
+bowl                31  0.385  0.530  0.314  0.214  0.622
+banana              19  0.313  0.462  0.358  0.143  0.621
+apple                4  0.118  0.168  0.353    n/a  0.118
+sandwich             8  0.670  0.859    n/a    n/a  0.689
+orange               1  0.250  0.250    n/a    n/a  0.500
+broccoli            17  0.273  0.408  0.011  0.239  0.580
+carrot              13  0.440  0.624  0.000  0.585  0.711
+hot dog              3  0.000  0.000  0.000  0.000  0.000
+pizza               13  0.663  0.868  0.700  0.700  0.702
+donut                1  0.069  0.077    n/a    n/a  0.450
+cake                 3  0.631  0.663  0.000    n/a  0.950
+chair               71  0.397  0.591  0.160  0.459  0.787
+couch               12  0.457  0.596  0.000  0.477  0.537
+potted plant         8  0.425  0.581  0.288  0.636    n/a
+bed                  9  0.553  0.772    n/a  0.900  0.530
+dining table        29  0.615  0.754  0.000  0.371  0.709
+toilet               4  0.926  1.000    n/a  0.850  1.000
+tv                  16  0.637  0.745  0.028  0.712  0.743
+laptop              14  0.541  0.671    n/a  0.496  0.675
+mouse                5  0.654  0.901  0.565  0.851    n/a
+remote              10  0.178  0.282  0.221    n/a    n/a
+keyboard             9  0.414  0.503  0.177  0.547  0.217
+cell phone           9  0.143  0.331  0.119  0.426    n/a
+microwave            3  0.400  0.663  0.400  0.404    n/a
+oven                 2  0.505  0.505    n/a  0.000  1.000
+sink                 9  0.642  0.854  1.000  0.569  0.900
+refrigerator         5  0.746  0.967    n/a  0.900  0.752
+book                35  0.097  0.256  0.125  0.061    n/a
+clock                8  0.586  0.692  0.460    n/a  0.950
+vase                14  0.696  0.886  0.555  0.910  1.000
+scissors             2  0.000  0.000  0.000  0.000    n/a
+teddy bear           4  0.514  0.950    n/a  0.300  0.575
+
+Saved results\coco\yolo11s\metrics.json
+>> C:\Users\maxog\Documents\SJSU material\CMPE 249\CMPE 249 Assignments\Track A\.venv\Scripts\python.exe evaluate.py --model rtdetr-l --dataset coco --max-images 200
+Evaluating rtdetr-l on coco: 200 images -> results\coco\rtdetr-l
+
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+rtdetr-l:   0%|          | 0/200 [00:00<?, ?it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+rtdetr-l:   0%|          | 1/200 [00:05<16:36,  5.01s/it]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+rtdetr-l:   2%|▏         | 3/200 [00:05<04:23,  1.34s/it]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+rtdetr-l:   3%|▎         | 6/200 [00:05<01:46,  1.83it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+rtdetr-l:   4%|▍         | 8/200 [00:05<01:09,  2.75it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+rtdetr-l:   6%|▌         | 11/200 [00:05<00:42,  4.49it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+rtdetr-l:   6%|▋         | 13/200 [00:05<00:32,  5.80it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+rtdetr-l:   8%|▊         | 16/200 [00:05<00:22,  8.21it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+rtdetr-l:  10%|▉         | 19/200 [00:05<00:17, 10.61it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+rtdetr-l:  11%|█         | 22/200 [00:05<00:13, 12.95it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+rtdetr-l:  12%|█▎        | 25/200 [00:06<00:12, 13.96it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+rtdetr-l:  14%|█▍        | 28/200 [00:06<00:10, 15.64it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+rtdetr-l:  16%|█▌        | 31/200 [00:06<00:11, 15.18it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+rtdetr-l:  16%|█▋        | 33/200 [00:06<00:10, 15.89it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+rtdetr-l:  18%|█▊        | 35/200 [00:06<00:10, 16.46it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+rtdetr-l:  18%|█▊        | 37/200 [00:06<00:09, 16.44it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+rtdetr-l:  20%|█▉        | 39/200 [00:06<00:10, 15.91it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+rtdetr-l:  20%|██        | 41/200 [00:07<00:09, 16.28it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+rtdetr-l:  22%|██▏       | 43/200 [00:07<00:13, 11.74it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+rtdetr-l:  22%|██▎       | 45/200 [00:07<00:11, 13.11it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+rtdetr-l:  24%|██▍       | 48/200 [00:07<00:10, 15.05it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+rtdetr-l:  25%|██▌       | 50/200 [00:07<00:09, 16.06it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+rtdetr-l:  26%|██▋       | 53/200 [00:07<00:08, 17.85it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+rtdetr-l:  28%|██▊       | 55/200 [00:08<00:08, 17.36it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+rtdetr-l:  28%|██▊       | 57/200 [00:08<00:08, 16.80it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+rtdetr-l:  30%|███       | 60/200 [00:08<00:07, 18.33it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+rtdetr-l:  31%|███       | 62/200 [00:08<00:08, 16.39it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+rtdetr-l:  32%|███▏      | 64/200 [00:08<00:08, 16.86it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+rtdetr-l:  34%|███▎      | 67/200 [00:08<00:07, 18.34it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+rtdetr-l:  35%|███▌      | 70/200 [00:08<00:06, 19.13it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+rtdetr-l:  36%|███▋      | 73/200 [00:08<00:06, 19.80it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+rtdetr-l:  38%|███▊      | 76/200 [00:09<00:06, 20.11it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+rtdetr-l:  40%|███▉      | 79/200 [00:09<00:06, 17.67it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+rtdetr-l:  41%|████      | 82/200 [00:09<00:06, 17.86it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+rtdetr-l:  42%|████▏     | 84/200 [00:09<00:06, 17.76it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+rtdetr-l:  43%|████▎     | 86/200 [00:09<00:06, 17.96it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+rtdetr-l:  44%|████▍     | 88/200 [00:09<00:06, 16.79it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+rtdetr-l:  45%|████▌     | 90/200 [00:09<00:06, 17.34it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+rtdetr-l:  46%|████▋     | 93/200 [00:10<00:05, 18.95it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+rtdetr-l:  48%|████▊     | 96/200 [00:10<00:05, 19.22it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+rtdetr-l:  50%|████▉     | 99/200 [00:10<00:05, 18.42it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+rtdetr-l:  50%|█████     | 101/200 [00:10<00:05, 17.69it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+rtdetr-l:  52%|█████▏    | 103/200 [00:10<00:05, 18.14it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+rtdetr-l:  53%|█████▎    | 106/200 [00:10<00:05, 17.86it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+rtdetr-l:  54%|█████▍    | 108/200 [00:10<00:05, 17.29it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+rtdetr-l:  56%|█████▌    | 111/200 [00:11<00:04, 17.88it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+rtdetr-l:  56%|█████▋    | 113/200 [00:11<00:05, 17.01it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+rtdetr-l:  58%|█████▊    | 116/200 [00:11<00:04, 18.32it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+rtdetr-l:  60%|█████▉    | 119/200 [00:11<00:04, 19.13it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+rtdetr-l:  60%|██████    | 121/200 [00:11<00:04, 17.63it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+rtdetr-l:  62%|██████▏   | 123/200 [00:11<00:04, 17.54it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+rtdetr-l:  62%|██████▎   | 125/200 [00:11<00:04, 18.06it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+rtdetr-l:  64%|██████▍   | 128/200 [00:12<00:03, 18.98it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+rtdetr-l:  66%|██████▌   | 131/200 [00:12<00:03, 19.91it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+rtdetr-l:  66%|██████▋   | 133/200 [00:12<00:03, 19.86it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+rtdetr-l:  68%|██████▊   | 135/200 [00:12<00:03, 17.26it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+rtdetr-l:  68%|██████▊   | 137/200 [00:12<00:03, 17.65it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+rtdetr-l:  70%|██████▉   | 139/200 [00:12<00:03, 18.05it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+rtdetr-l:  71%|███████   | 142/200 [00:12<00:03, 19.12it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+rtdetr-l:  72%|███████▏  | 144/200 [00:12<00:03, 16.07it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+rtdetr-l:  73%|███████▎  | 146/200 [00:13<00:03, 16.70it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+rtdetr-l:  74%|███████▍  | 148/200 [00:13<00:03, 14.62it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+rtdetr-l:  75%|███████▌  | 150/200 [00:13<00:03, 15.36it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+rtdetr-l:  76%|███████▋  | 153/200 [00:13<00:02, 16.98it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+rtdetr-l:  78%|███████▊  | 155/200 [00:13<00:02, 17.65it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+rtdetr-l:  78%|███████▊  | 157/200 [00:13<00:02, 16.03it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+rtdetr-l:  80%|███████▉  | 159/200 [00:13<00:02, 16.69it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+rtdetr-l:  80%|████████  | 161/200 [00:13<00:02, 17.49it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+rtdetr-l:  82%|████████▏ | 163/200 [00:14<00:02, 17.96it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+rtdetr-l:  83%|████████▎ | 166/200 [00:14<00:01, 18.83it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+rtdetr-l:  84%|████████▍ | 168/200 [00:14<00:02, 15.16it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+rtdetr-l:  85%|████████▌ | 170/200 [00:14<00:01, 15.62it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+rtdetr-l:  86%|████████▌ | 172/200 [00:14<00:01, 16.40it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+rtdetr-l:  87%|████████▋ | 174/200 [00:14<00:01, 17.23it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+rtdetr-l:  88%|████████▊ | 176/200 [00:14<00:01, 17.62it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+rtdetr-l:  89%|████████▉ | 178/200 [00:15<00:01, 16.75it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+rtdetr-l:  90%|█████████ | 180/200 [00:15<00:01, 17.49it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+rtdetr-l:  91%|█████████ | 182/200 [00:15<00:01, 15.20it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+rtdetr-l:  92%|█████████▏| 184/200 [00:15<00:01, 15.39it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+rtdetr-l:  93%|█████████▎| 186/200 [00:15<00:00, 16.42it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+rtdetr-l:  94%|█████████▍| 189/200 [00:15<00:00, 17.74it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+rtdetr-l:  96%|█████████▌| 191/200 [00:15<00:00, 16.20it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+rtdetr-l:  96%|█████████▋| 193/200 [00:15<00:00, 15.84it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+rtdetr-l:  98%|█████████▊| 195/200 [00:16<00:00, 15.61it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+rtdetr-l:  98%|█████████▊| 197/200 [00:16<00:00, 16.17it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+rtdetr-l: 100%|█████████▉| 199/200 [00:16<00:00, 15.06it/s]
+rtdetr-l: 100%|██████████| 200/200 [00:16<00:00, 12.18it/s]
+Loading and preparing results...
+DONE (t=0.16s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=1.35s).
+Accumulating evaluation results...
+DONE (t=0.47s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.573
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.759
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.613
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.419
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.603
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.760
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.434
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.702
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.729
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.538
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.725
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.903
+
+class              #gt     AP   AP50    APs    APm    APl
+person             504  0.632  0.877  0.405  0.692  0.853
+bicycle             11  0.658  0.770  0.800  0.647  0.858
+car                 46  0.575  0.781  0.491  0.695  0.852
+motorcycle          21  0.724  0.968  0.441  0.724  0.921
+airplane             6  0.704  0.804  0.652  0.505  1.000
+bus                 25  0.624  0.873  0.607  0.501  0.922
+train                5  0.782  0.802    n/a    n/a  0.782
+truck               15  0.328  0.487  0.245  0.379  0.750
+boat                 7  0.387  0.554  0.150  0.552    n/a
+traffic light       15  0.392  0.626  0.392  0.504  0.500
+fire hydrant         5  0.797  0.943  0.700  0.850  0.925
+stop sign            4  0.881  0.950  0.900  0.900  1.000
+bench               15  0.545  0.767  0.679  0.652  0.400
+bird                11  0.558  0.798  0.429  0.794    n/a
+cat                  7  0.906  1.000    n/a  1.000  0.898
+dog                  2  0.702  1.000    n/a  0.500  0.900
+horse                9  0.749  0.988  0.311  0.751  1.000
+sheep               10  0.752  0.954    n/a  0.853  0.738
+cow                  4  0.476  0.527  0.486    n/a  1.000
+elephant             6  0.600  0.765    n/a  0.760  0.602
+bear                 3  0.934  1.000    n/a    n/a  0.934
+zebra               11  0.844  0.992  0.400  0.900  0.912
+giraffe              1  1.000  1.000    n/a    n/a  1.000
+backpack            27  0.180  0.360  0.228  0.267    n/a
+umbrella             7  0.510  0.750  0.177  0.650  0.950
+handbag             21  0.311  0.405  0.159  0.453  0.503
+tie                 24  0.449  0.746  0.258  0.768  0.801
+suitcase             4  0.851  1.000    n/a  0.751  0.950
+frisbee              9  0.859  1.000  0.867  0.922  0.825
+skis                 5  0.667  0.967  0.659  0.630    n/a
+sports ball          4  0.312  0.752  0.411  0.000    n/a
+kite                19  0.581  0.852  0.669  0.548  0.740
+baseball bat         4  0.518  0.856  0.534    n/a    n/a
+baseball glove       6  0.580  0.976  0.800  0.383    n/a
+skateboard           6  0.654  0.832  0.404  0.819  0.700
+surfboard           10  0.769  1.000  0.326  0.789  0.903
+tennis racket        6  0.615  1.000  0.445  0.755    n/a
+bottle              31  0.347  0.544  0.319  0.488    n/a
+wine glass          32  0.468  0.690  0.275  0.640  0.900
+cup                 49  0.636  0.806  0.401  0.776  0.934
+fork                12  0.587  0.659  0.507  0.783  0.325
+knife               21  0.589  0.747  0.375  0.791  0.703
+spoon               13  0.407  0.605  0.404  0.607    n/a
+bowl                31  0.506  0.616  0.479  0.366  0.691
+banana              19  0.366  0.552  0.459  0.081  0.666
+apple                4  0.189  0.249  0.725    n/a  0.170
+sandwich             8  0.420  0.567    n/a    n/a  0.510
+orange               1  0.250  0.250    n/a    n/a  0.333
+broccoli            17  0.361  0.663  0.067  0.345  0.593
+carrot              13  0.381  0.540  0.000  0.461  0.835
+hot dog              3  0.189  0.223  0.450  0.267  0.100
+pizza               13  0.688  0.931  0.600  0.633  0.739
+donut                1  1.000  1.000    n/a    n/a  1.000
+cake                 3  0.631  0.663  0.000    n/a  0.950
+chair               71  0.412  0.586  0.157  0.476  0.800
+couch               12  0.523  0.620  0.000  0.368  0.649
+potted plant         8  0.470  0.795  0.405  0.648    n/a
+bed                  9  0.564  0.846    n/a  0.800  0.555
+dining table        29  0.655  0.771  0.000  0.419  0.752
+toilet               4  0.593  1.000    n/a  0.850  0.440
+tv                  16  0.767  0.879  0.202  0.824  0.880
+laptop              14  0.688  0.793    n/a  0.661  0.776
+mouse                5  0.782  1.000  0.733  0.868    n/a
+remote              10  0.262  0.441  0.262    n/a    n/a
+keyboard             9  0.424  0.582  0.000  0.632  0.150
+cell phone           9  0.327  0.535  0.317  0.794    n/a
+microwave            3  0.850  1.000  1.000  0.801    n/a
+oven                 2  0.558  0.752    n/a  0.100  1.000
+sink                 9  0.715  0.894  0.850  0.662  1.000
+refrigerator         5  0.734  0.926    n/a  0.400  0.801
+book                35  0.183  0.366  0.230  0.180    n/a
+clock                8  0.638  0.804  0.520    n/a  0.925
+vase                14  0.622  0.824  0.361  0.881  1.000
+scissors             2  0.101  0.505  0.200  0.000    n/a
+teddy bear           4  0.702  1.000    n/a  0.500  0.792
+
+Saved results\coco\rtdetr-l\metrics.json
+>> C:\Users\maxog\Documents\SJSU material\CMPE 249\CMPE 249 Assignments\Track A\.venv\Scripts\python.exe evaluate.py --model fasterrcnn_r50_fpn_v2 --dataset coco --max-images 200
+Evaluating fasterrcnn_r50_fpn_v2 on coco: 200 images -> results\coco\fasterrcnn_r50_fpn_v2
+
+fasterrcnn_r50_fpn_v2:   0%|          | 0/200 [00:00<?, ?it/s]C:\Users\maxog\Documents\SJSU material\CMPE 249\CMPE 249 
+Assignments\Track A\detectors.py:116: UserWarning: The given NumPy array is not writable, and PyTorch does not support 
+non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the 
+array to protect its data or make it writable before converting it to a tensor. This type of warning will be 
+suppressed for the rest of this program. (Triggered internally at 
+C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\utils\tensor_numpy.cpp:219.)
+  x = torch.from_numpy(img_rgb).to(self.device).permute(2, 0, 1).float().div_(255)
+
+fasterrcnn_r50_fpn_v2:   0%|          | 1/200 [00:00<02:51,  1.16it/s]
+fasterrcnn_r50_fpn_v2:   1%|          | 2/200 [00:01<01:31,  2.18it/s]
+fasterrcnn_r50_fpn_v2:   2%|▏         | 3/200 [00:01<01:04,  3.07it/s]
+fasterrcnn_r50_fpn_v2:   2%|▏         | 4/200 [00:01<00:49,  3.98it/s]
+fasterrcnn_r50_fpn_v2:   2%|▎         | 5/200 [00:01<00:43,  4.46it/s]
+fasterrcnn_r50_fpn_v2:   4%|▎         | 7/200 [00:01<00:30,  6.37it/s]
+fasterrcnn_r50_fpn_v2:   4%|▍         | 8/200 [00:01<00:30,  6.21it/s]
+fasterrcnn_r50_fpn_v2:   5%|▌         | 10/200 [00:02<00:23,  8.05it/s]
+fasterrcnn_r50_fpn_v2:   6%|▌         | 12/200 [00:02<00:21,  8.94it/s]
+fasterrcnn_r50_fpn_v2:   7%|▋         | 14/200 [00:02<00:20,  8.96it/s]
+fasterrcnn_r50_fpn_v2:   8%|▊         | 15/200 [00:02<00:23,  7.95it/s]
+fasterrcnn_r50_fpn_v2:   8%|▊         | 17/200 [00:02<00:19,  9.29it/s]
+fasterrcnn_r50_fpn_v2:   9%|▉         | 18/200 [00:02<00:20,  8.72it/s]
+fasterrcnn_r50_fpn_v2:  10%|█         | 20/200 [00:03<00:18,  9.91it/s]
+fasterrcnn_r50_fpn_v2:  11%|█         | 22/200 [00:03<00:19,  9.16it/s]
+fasterrcnn_r50_fpn_v2:  12%|█▏        | 24/200 [00:03<00:17, 10.12it/s]
+fasterrcnn_r50_fpn_v2:  13%|█▎        | 26/200 [00:03<00:15, 11.22it/s]
+fasterrcnn_r50_fpn_v2:  14%|█▍        | 28/200 [00:03<00:16, 10.22it/s]
+fasterrcnn_r50_fpn_v2:  15%|█▌        | 30/200 [00:04<00:17,  9.79it/s]
+fasterrcnn_r50_fpn_v2:  16%|█▌        | 32/200 [00:04<00:15, 11.01it/s]
+fasterrcnn_r50_fpn_v2:  17%|█▋        | 34/200 [00:04<00:18,  9.11it/s]
+fasterrcnn_r50_fpn_v2:  18%|█▊        | 36/200 [00:04<00:18,  9.06it/s]
+fasterrcnn_r50_fpn_v2:  19%|█▉        | 38/200 [00:04<00:17,  9.30it/s]
+fasterrcnn_r50_fpn_v2:  20%|██        | 40/200 [00:05<00:15, 10.05it/s]
+fasterrcnn_r50_fpn_v2:  21%|██        | 42/200 [00:05<00:14, 11.19it/s]
+fasterrcnn_r50_fpn_v2:  22%|██▏       | 44/200 [00:05<00:13, 11.71it/s]
+fasterrcnn_r50_fpn_v2:  23%|██▎       | 46/200 [00:05<00:12, 12.56it/s]
+fasterrcnn_r50_fpn_v2:  24%|██▍       | 48/200 [00:05<00:12, 11.91it/s]
+fasterrcnn_r50_fpn_v2:  25%|██▌       | 50/200 [00:05<00:12, 11.94it/s]
+fasterrcnn_r50_fpn_v2:  26%|██▌       | 52/200 [00:06<00:13, 10.68it/s]
+fasterrcnn_r50_fpn_v2:  27%|██▋       | 54/200 [00:06<00:12, 11.74it/s]
+fasterrcnn_r50_fpn_v2:  28%|██▊       | 56/200 [00:06<00:12, 11.92it/s]
+fasterrcnn_r50_fpn_v2:  29%|██▉       | 58/200 [00:06<00:13, 10.50it/s]
+fasterrcnn_r50_fpn_v2:  30%|███       | 60/200 [00:06<00:12, 11.31it/s]
+fasterrcnn_r50_fpn_v2:  31%|███       | 62/200 [00:06<00:11, 11.91it/s]
+fasterrcnn_r50_fpn_v2:  32%|███▏      | 64/200 [00:07<00:10, 12.69it/s]
+fasterrcnn_r50_fpn_v2:  33%|███▎      | 66/200 [00:07<00:10, 12.84it/s]
+fasterrcnn_r50_fpn_v2:  34%|███▍      | 68/200 [00:07<00:10, 13.17it/s]
+fasterrcnn_r50_fpn_v2:  35%|███▌      | 70/200 [00:07<00:10, 12.65it/s]
+fasterrcnn_r50_fpn_v2:  36%|███▌      | 72/200 [00:07<00:10, 12.57it/s]
+fasterrcnn_r50_fpn_v2:  37%|███▋      | 74/200 [00:07<00:09, 12.94it/s]
+fasterrcnn_r50_fpn_v2:  38%|███▊      | 76/200 [00:07<00:09, 12.97it/s]
+fasterrcnn_r50_fpn_v2:  39%|███▉      | 78/200 [00:08<00:09, 13.21it/s]
+fasterrcnn_r50_fpn_v2:  40%|████      | 80/200 [00:08<00:12,  9.78it/s]
+fasterrcnn_r50_fpn_v2:  41%|████      | 82/200 [00:08<00:11, 10.42it/s]
+fasterrcnn_r50_fpn_v2:  42%|████▏     | 84/200 [00:08<00:10, 11.37it/s]
+fasterrcnn_r50_fpn_v2:  43%|████▎     | 86/200 [00:08<00:10, 10.97it/s]
+fasterrcnn_r50_fpn_v2:  44%|████▍     | 88/200 [00:09<00:09, 11.98it/s]
+fasterrcnn_r50_fpn_v2:  45%|████▌     | 90/200 [00:09<00:10, 10.89it/s]
+fasterrcnn_r50_fpn_v2:  46%|████▌     | 92/200 [00:09<00:10, 10.57it/s]
+fasterrcnn_r50_fpn_v2:  47%|████▋     | 94/200 [00:09<00:09, 11.23it/s]
+fasterrcnn_r50_fpn_v2:  48%|████▊     | 96/200 [00:09<00:10, 10.29it/s]
+fasterrcnn_r50_fpn_v2:  49%|████▉     | 98/200 [00:10<00:09, 10.87it/s]
+fasterrcnn_r50_fpn_v2:  50%|█████     | 100/200 [00:10<00:08, 11.86it/s]
+fasterrcnn_r50_fpn_v2:  51%|█████     | 102/200 [00:10<00:08, 12.01it/s]
+fasterrcnn_r50_fpn_v2:  52%|█████▏    | 104/200 [00:10<00:07, 12.78it/s]
+fasterrcnn_r50_fpn_v2:  53%|█████▎    | 106/200 [00:10<00:07, 12.91it/s]
+fasterrcnn_r50_fpn_v2:  54%|█████▍    | 108/200 [00:10<00:06, 13.52it/s]
+fasterrcnn_r50_fpn_v2:  55%|█████▌    | 110/200 [00:10<00:06, 13.42it/s]
+fasterrcnn_r50_fpn_v2:  56%|█████▌    | 112/200 [00:11<00:06, 13.62it/s]
+fasterrcnn_r50_fpn_v2:  57%|█████▋    | 114/200 [00:11<00:06, 13.76it/s]
+fasterrcnn_r50_fpn_v2:  58%|█████▊    | 116/200 [00:11<00:06, 13.87it/s]
+fasterrcnn_r50_fpn_v2:  59%|█████▉    | 118/200 [00:11<00:05, 13.94it/s]
+fasterrcnn_r50_fpn_v2:  60%|██████    | 120/200 [00:11<00:05, 13.98it/s]
+fasterrcnn_r50_fpn_v2:  61%|██████    | 122/200 [00:11<00:05, 14.02it/s]
+fasterrcnn_r50_fpn_v2:  62%|██████▏   | 124/200 [00:11<00:05, 14.14it/s]
+fasterrcnn_r50_fpn_v2:  63%|██████▎   | 126/200 [00:12<00:05, 14.06it/s]
+fasterrcnn_r50_fpn_v2:  64%|██████▍   | 128/200 [00:12<00:05, 13.78it/s]
+fasterrcnn_r50_fpn_v2:  65%|██████▌   | 130/200 [00:12<00:05, 13.88it/s]
+fasterrcnn_r50_fpn_v2:  66%|██████▌   | 132/200 [00:12<00:04, 13.65it/s]
+fasterrcnn_r50_fpn_v2:  67%|██████▋   | 134/200 [00:12<00:04, 14.07it/s]
+fasterrcnn_r50_fpn_v2:  68%|██████▊   | 136/200 [00:12<00:04, 13.51it/s]
+fasterrcnn_r50_fpn_v2:  69%|██████▉   | 138/200 [00:12<00:04, 13.69it/s]
+fasterrcnn_r50_fpn_v2:  70%|███████   | 140/200 [00:13<00:04, 14.11it/s]
+fasterrcnn_r50_fpn_v2:  71%|███████   | 142/200 [00:13<00:05, 11.20it/s]
+fasterrcnn_r50_fpn_v2:  72%|███████▏  | 144/200 [00:13<00:04, 11.96it/s]
+fasterrcnn_r50_fpn_v2:  73%|███████▎  | 146/200 [00:13<00:04, 11.43it/s]
+fasterrcnn_r50_fpn_v2:  74%|███████▍  | 148/200 [00:13<00:04, 11.86it/s]
+fasterrcnn_r50_fpn_v2:  75%|███████▌  | 150/200 [00:13<00:04, 12.24it/s]
+fasterrcnn_r50_fpn_v2:  76%|███████▌  | 152/200 [00:14<00:04, 11.01it/s]
+fasterrcnn_r50_fpn_v2:  77%|███████▋  | 154/200 [00:14<00:04, 11.37it/s]
+fasterrcnn_r50_fpn_v2:  78%|███████▊  | 156/200 [00:14<00:03, 11.86it/s]
+fasterrcnn_r50_fpn_v2:  79%|███████▉  | 158/200 [00:14<00:03, 12.32it/s]
+fasterrcnn_r50_fpn_v2:  80%|████████  | 160/200 [00:14<00:03, 10.47it/s]
+fasterrcnn_r50_fpn_v2:  81%|████████  | 162/200 [00:15<00:03, 11.05it/s]
+fasterrcnn_r50_fpn_v2:  82%|████████▏ | 164/200 [00:15<00:02, 12.38it/s]
+fasterrcnn_r50_fpn_v2:  83%|████████▎ | 166/200 [00:15<00:02, 12.16it/s]
+fasterrcnn_r50_fpn_v2:  84%|████████▍ | 168/200 [00:15<00:02, 12.84it/s]
+fasterrcnn_r50_fpn_v2:  85%|████████▌ | 170/200 [00:15<00:02, 13.01it/s]
+fasterrcnn_r50_fpn_v2:  86%|████████▌ | 172/200 [00:15<00:02, 13.12it/s]
+fasterrcnn_r50_fpn_v2:  87%|████████▋ | 174/200 [00:15<00:01, 13.06it/s]
+fasterrcnn_r50_fpn_v2:  88%|████████▊ | 176/200 [00:16<00:01, 13.12it/s]
+fasterrcnn_r50_fpn_v2:  89%|████████▉ | 178/200 [00:16<00:01, 12.67it/s]
+fasterrcnn_r50_fpn_v2:  90%|█████████ | 180/200 [00:16<00:01, 12.55it/s]
+fasterrcnn_r50_fpn_v2:  91%|█████████ | 182/200 [00:16<00:01, 12.72it/s]
+fasterrcnn_r50_fpn_v2:  92%|█████████▏| 184/200 [00:16<00:01, 10.75it/s]
+fasterrcnn_r50_fpn_v2:  93%|█████████▎| 186/200 [00:17<00:01, 11.00it/s]
+fasterrcnn_r50_fpn_v2:  94%|█████████▍| 188/200 [00:17<00:01, 11.39it/s]
+fasterrcnn_r50_fpn_v2:  95%|█████████▌| 190/200 [00:17<00:00, 11.88it/s]
+fasterrcnn_r50_fpn_v2:  96%|█████████▌| 192/200 [00:17<00:00, 11.97it/s]
+fasterrcnn_r50_fpn_v2:  97%|█████████▋| 194/200 [00:17<00:00, 12.56it/s]
+fasterrcnn_r50_fpn_v2:  98%|█████████▊| 196/200 [00:17<00:00, 12.92it/s]
+fasterrcnn_r50_fpn_v2:  99%|█████████▉| 198/200 [00:17<00:00, 12.71it/s]
+fasterrcnn_r50_fpn_v2: 100%|██████████| 200/200 [00:18<00:00, 12.43it/s]
+fasterrcnn_r50_fpn_v2: 100%|██████████| 200/200 [00:18<00:00, 11.05it/s]
+Loading and preparing results...
+DONE (t=0.05s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=4.70s).
+Accumulating evaluation results...
+DONE (t=2.43s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.526
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.723
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.584
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.383
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.584
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.706
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.426
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.646
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.660
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.491
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.694
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.796
+
+class              #gt     AP   AP50    APs    APm    APl
+person             504  0.603  0.879  0.406  0.677  0.768
+bicycle             11  0.561  0.685  0.900  0.480  0.684
+car                 46  0.575  0.787  0.500  0.707  0.722
+motorcycle          21  0.604  0.896  0.101  0.627  0.818
+airplane             6  0.649  0.860  0.552  0.479  1.000
+bus                 25  0.657  0.892  0.607  0.593  0.821
+train                5  0.508  0.676    n/a    n/a  0.520
+truck               15  0.389  0.635  0.422  0.402  0.801
+boat                 7  0.104  0.198  0.011  0.376    n/a
+traffic light       15  0.474  0.690  0.517  0.474  0.800
+fire hydrant         5  0.664  0.845  0.250  0.702  0.900
+stop sign            4  0.913  1.000  0.900  0.900  0.950
+bench               15  0.490  0.744  0.492  0.553  0.600
+bird                11  0.303  0.573  0.353  0.296    n/a
+cat                  7  0.842  1.000    n/a  0.900  0.832
+dog                  2  0.850  1.000    n/a  0.800  0.900
+horse                9  0.669  0.891  0.370  0.701  0.844
+sheep               10  0.723  0.921    n/a  0.850  0.705
+cow                  4  0.208  0.282  0.358    n/a  0.044
+elephant             6  0.662  0.899    n/a  0.785  0.710
+bear                 3  0.934  1.000    n/a    n/a  0.934
+zebra               11  0.784  0.928  0.100  0.850  0.861
+giraffe              1  1.000  1.000    n/a    n/a  1.000
+backpack            27  0.187  0.390  0.248  0.214    n/a
+umbrella             7  0.596  0.840  0.288  0.600  1.000
+handbag             21  0.237  0.400  0.130  0.327  0.577
+tie                 24  0.476  0.742  0.303  0.784  0.800
+suitcase             4  0.818  1.000    n/a  0.751  0.901
+frisbee              9  0.820  1.000  0.866  0.867  0.676
+skis                 5  0.669  0.943  0.733  0.650    n/a
+sports ball          4  0.238  0.406  0.278  0.200    n/a
+kite                19  0.473  0.724  0.538  0.458  0.900
+baseball bat         4  0.604  1.000  0.743    n/a    n/a
+baseball glove       6  0.476  0.692  0.597  0.434    n/a
+skateboard           6  0.682  0.846  0.458  0.817  0.800
+surfboard           10  0.690  0.991  0.500  0.692  0.766
+tennis racket        6  0.665  1.000  0.634  0.733    n/a
+bottle              31  0.371  0.534  0.299  0.608    n/a
+wine glass          32  0.403  0.684  0.265  0.525  0.900
+cup                 49  0.591  0.786  0.449  0.688  0.748
+fork                12  0.413  0.645  0.448  0.394  0.800
+knife               21  0.401  0.663  0.234  0.602  0.501
+spoon               13  0.298  0.468  0.174  0.541    n/a
+bowl                31  0.448  0.584  0.408  0.293  0.698
+banana              19  0.253  0.472  0.183  0.086  0.530
+apple                4  0.249  0.318  0.685    n/a  0.192
+sandwich             8  0.543  0.727    n/a    n/a  0.560
+orange               1  0.000  0.000    n/a    n/a  0.000
+broccoli            17  0.288  0.478  0.000  0.346  0.514
+carrot              13  0.372  0.547  0.007  0.379  0.900
+hot dog              3  0.403  0.527  0.700  0.800  0.035
+pizza               13  0.629  0.950  0.400  0.634  0.694
+donut                1  1.000  1.000    n/a    n/a  1.000
+cake                 3  0.597  0.663  0.000    n/a  0.900
+chair               71  0.349  0.577  0.171  0.387  0.726
+couch               12  0.409  0.600  0.000  0.528  0.480
+potted plant         8  0.399  0.571  0.376  0.545    n/a
+bed                  9  0.525  0.824    n/a  0.900  0.488
+dining table        29  0.572  0.732  0.000  0.377  0.668
+toilet               4  0.548  0.894    n/a  0.850  0.517
+tv                  16  0.725  0.824  0.063  0.863  0.769
+laptop              14  0.719  0.855    n/a  0.712  0.755
+mouse                5  0.687  1.000  0.666  0.750    n/a
+remote              10  0.244  0.433  0.259    n/a    n/a
+keyboard             9  0.454  0.614  0.126  0.620  0.250
+cell phone           9  0.323  0.540  0.200  0.900    n/a
+microwave            3  0.750  1.000  0.900  0.701    n/a
+oven                 2  0.487  0.835    n/a  0.100  0.900
+sink                 9  0.584  0.820  0.800  0.503  0.800
+refrigerator         5  0.556  0.797    n/a  0.700  0.566
+book                35  0.121  0.292  0.157  0.155    n/a
+clock                8  0.585  0.882  0.528    n/a  0.750
+vase                14  0.641  0.910  0.559  0.841  1.000
+scissors             2  0.000  0.000  0.000  0.000    n/a
+teddy bear           4  0.696  0.894    n/a  0.800  0.674
+
+Saved results\coco\fasterrcnn_r50_fpn_v2\metrics.json
+>> C:\Users\maxog\Documents\SJSU material\CMPE 249\CMPE 249 Assignments\Track A\.venv\Scripts\python.exe evaluate.py --model fcos_r50_fpn --dataset coco --max-images 200
+Evaluating fcos_r50_fpn on coco: 200 images -> results\coco\fcos_r50_fpn
+
+fcos_r50_fpn:   0%|          | 0/200 [00:00<?, ?it/s]C:\Users\maxog\Documents\SJSU material\CMPE 249\CMPE 249 
+Assignments\Track A\detectors.py:116: UserWarning: The given NumPy array is not writable, and PyTorch does not support 
+non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the 
+array to protect its data or make it writable before converting it to a tensor. This type of warning will be 
+suppressed for the rest of this program. (Triggered internally at 
+C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\utils\tensor_numpy.cpp:219.)
+  x = torch.from_numpy(img_rgb).to(self.device).permute(2, 0, 1).float().div_(255)
+
+fcos_r50_fpn:   0%|          | 1/200 [00:00<03:18,  1.00it/s]
+fcos_r50_fpn:   1%|          | 2/200 [00:01<01:58,  1.68it/s]
+fcos_r50_fpn:   2%|▏         | 3/200 [00:01<01:25,  2.31it/s]
+fcos_r50_fpn:   2%|▏         | 4/200 [00:01<01:07,  2.90it/s]
+fcos_r50_fpn:   2%|▎         | 5/200 [00:01<00:59,  3.28it/s]
+fcos_r50_fpn:   3%|▎         | 6/200 [00:02<00:46,  4.18it/s]
+fcos_r50_fpn:   4%|▍         | 8/200 [00:02<00:37,  5.10it/s]
+fcos_r50_fpn:   4%|▍         | 9/200 [00:02<00:32,  5.83it/s]
+fcos_r50_fpn:   5%|▌         | 10/200 [00:02<00:28,  6.55it/s]
+fcos_r50_fpn:   6%|▌         | 12/200 [00:02<00:23,  8.11it/s]
+fcos_r50_fpn:   7%|▋         | 14/200 [00:03<00:25,  7.23it/s]
+fcos_r50_fpn:   8%|▊         | 15/200 [00:03<00:30,  6.09it/s]
+fcos_r50_fpn:   8%|▊         | 16/200 [00:03<00:30,  6.13it/s]
+fcos_r50_fpn:   9%|▉         | 18/200 [00:03<00:28,  6.47it/s]
+fcos_r50_fpn:  10%|█         | 20/200 [00:04<00:23,  7.55it/s]
+fcos_r50_fpn:  11%|█         | 22/200 [00:04<00:23,  7.54it/s]
+fcos_r50_fpn:  12%|█▏        | 23/200 [00:04<00:22,  7.78it/s]
+fcos_r50_fpn:  12%|█▎        | 25/200 [00:04<00:20,  8.69it/s]
+fcos_r50_fpn:  14%|█▎        | 27/200 [00:04<00:17,  9.81it/s]
+fcos_r50_fpn:  14%|█▍        | 29/200 [00:05<00:24,  6.91it/s]
+fcos_r50_fpn:  15%|█▌        | 30/200 [00:05<00:25,  6.67it/s]
+fcos_r50_fpn:  16%|█▌        | 31/200 [00:05<00:23,  7.06it/s]
+fcos_r50_fpn:  16%|█▋        | 33/200 [00:05<00:24,  6.87it/s]
+fcos_r50_fpn:  17%|█▋        | 34/200 [00:05<00:26,  6.26it/s]
+fcos_r50_fpn:  18%|█▊        | 36/200 [00:06<00:25,  6.45it/s]
+fcos_r50_fpn:  19%|█▉        | 38/200 [00:06<00:20,  7.85it/s]
+fcos_r50_fpn:  20%|█▉        | 39/200 [00:06<00:19,  8.05it/s]
+fcos_r50_fpn:  20%|██        | 41/200 [00:06<00:16,  9.37it/s]
+fcos_r50_fpn:  22%|██▏       | 43/200 [00:06<00:15, 10.04it/s]
+fcos_r50_fpn:  22%|██▎       | 45/200 [00:07<00:14, 10.50it/s]
+fcos_r50_fpn:  24%|██▎       | 47/200 [00:07<00:14, 10.30it/s]
+fcos_r50_fpn:  24%|██▍       | 49/200 [00:07<00:14, 10.21it/s]
+fcos_r50_fpn:  26%|██▌       | 51/200 [00:07<00:15,  9.93it/s]
+fcos_r50_fpn:  26%|██▋       | 53/200 [00:08<00:20,  7.08it/s]
+fcos_r50_fpn:  27%|██▋       | 54/200 [00:08<00:28,  5.06it/s]
+fcos_r50_fpn:  28%|██▊       | 55/200 [00:09<00:36,  3.93it/s]
+fcos_r50_fpn:  28%|██▊       | 56/200 [00:09<00:42,  3.42it/s]
+fcos_r50_fpn:  28%|██▊       | 57/200 [00:09<00:45,  3.15it/s]
+fcos_r50_fpn:  29%|██▉       | 58/200 [00:10<00:44,  3.17it/s]
+fcos_r50_fpn:  30%|██▉       | 59/200 [00:10<00:37,  3.80it/s]
+fcos_r50_fpn:  30%|███       | 60/200 [00:10<00:31,  4.46it/s]
+fcos_r50_fpn:  30%|███       | 61/200 [00:10<00:27,  4.97it/s]
+fcos_r50_fpn:  32%|███▏      | 63/200 [00:10<00:20,  6.79it/s]
+fcos_r50_fpn:  32%|███▎      | 65/200 [00:10<00:15,  8.46it/s]
+fcos_r50_fpn:  34%|███▎      | 67/200 [00:11<00:13,  9.78it/s]
+fcos_r50_fpn:  34%|███▍      | 69/200 [00:11<00:13,  9.82it/s]
+fcos_r50_fpn:  36%|███▌      | 71/200 [00:11<00:13,  9.40it/s]
+fcos_r50_fpn:  36%|███▋      | 73/200 [00:11<00:12, 10.09it/s]
+fcos_r50_fpn:  38%|███▊      | 75/200 [00:11<00:11, 10.59it/s]
+fcos_r50_fpn:  38%|███▊      | 77/200 [00:11<00:10, 11.26it/s]
+fcos_r50_fpn:  40%|███▉      | 79/200 [00:12<00:15,  7.97it/s]
+fcos_r50_fpn:  40%|████      | 80/200 [00:12<00:14,  8.26it/s]
+fcos_r50_fpn:  41%|████      | 82/200 [00:12<00:13,  8.59it/s]
+fcos_r50_fpn:  42%|████▏     | 83/200 [00:12<00:13,  8.66it/s]
+fcos_r50_fpn:  42%|████▎     | 85/200 [00:13<00:15,  7.36it/s]
+fcos_r50_fpn:  44%|████▎     | 87/200 [00:13<00:13,  8.57it/s]
+fcos_r50_fpn:  44%|████▍     | 89/200 [00:13<00:11,  9.31it/s]
+fcos_r50_fpn:  46%|████▌     | 91/200 [00:13<00:13,  8.31it/s]
+fcos_r50_fpn:  46%|████▌     | 92/200 [00:13<00:14,  7.48it/s]
+fcos_r50_fpn:  47%|████▋     | 94/200 [00:14<00:11,  9.17it/s]
+fcos_r50_fpn:  48%|████▊     | 96/200 [00:14<00:12,  8.55it/s]
+fcos_r50_fpn:  49%|████▉     | 98/200 [00:14<00:10,  9.88it/s]
+fcos_r50_fpn:  50%|█████     | 100/200 [00:14<00:09, 11.10it/s]
+fcos_r50_fpn:  51%|█████     | 102/200 [00:14<00:07, 12.59it/s]
+fcos_r50_fpn:  52%|█████▏    | 104/200 [00:14<00:07, 13.01it/s]
+fcos_r50_fpn:  53%|█████▎    | 106/200 [00:15<00:07, 13.30it/s]
+fcos_r50_fpn:  54%|█████▍    | 108/200 [00:15<00:06, 13.82it/s]
+fcos_r50_fpn:  55%|█████▌    | 110/200 [00:15<00:06, 13.60it/s]
+fcos_r50_fpn:  56%|█████▌    | 112/200 [00:15<00:06, 14.19it/s]
+fcos_r50_fpn:  57%|█████▋    | 114/200 [00:15<00:05, 14.64it/s]
+fcos_r50_fpn:  58%|█████▊    | 116/200 [00:15<00:05, 15.15it/s]
+fcos_r50_fpn:  59%|█████▉    | 118/200 [00:15<00:05, 15.12it/s]
+fcos_r50_fpn:  60%|██████    | 120/200 [00:15<00:05, 14.88it/s]
+fcos_r50_fpn:  61%|██████    | 122/200 [00:16<00:05, 14.91it/s]
+fcos_r50_fpn:  62%|██████▏   | 124/200 [00:16<00:04, 15.34it/s]
+fcos_r50_fpn:  63%|██████▎   | 126/200 [00:16<00:04, 15.28it/s]
+fcos_r50_fpn:  64%|██████▍   | 128/200 [00:16<00:04, 15.28it/s]
+fcos_r50_fpn:  65%|██████▌   | 130/200 [00:16<00:04, 15.66it/s]
+fcos_r50_fpn:  66%|██████▌   | 132/200 [00:16<00:04, 15.19it/s]
+fcos_r50_fpn:  67%|██████▋   | 134/200 [00:16<00:04, 14.54it/s]
+fcos_r50_fpn:  68%|██████▊   | 136/200 [00:17<00:04, 14.12it/s]
+fcos_r50_fpn:  69%|██████▉   | 138/200 [00:17<00:04, 13.80it/s]
+fcos_r50_fpn:  70%|███████   | 140/200 [00:17<00:04, 12.30it/s]
+fcos_r50_fpn:  71%|███████   | 142/200 [00:17<00:05, 10.03it/s]
+fcos_r50_fpn:  72%|███████▏  | 144/200 [00:17<00:05,  9.82it/s]
+fcos_r50_fpn:  73%|███████▎  | 146/200 [00:18<00:05, 10.28it/s]
+fcos_r50_fpn:  74%|███████▍  | 148/200 [00:18<00:05, 10.16it/s]
+fcos_r50_fpn:  75%|███████▌  | 150/200 [00:18<00:04, 10.05it/s]
+fcos_r50_fpn:  76%|███████▌  | 152/200 [00:18<00:05,  9.01it/s]
+fcos_r50_fpn:  77%|███████▋  | 154/200 [00:18<00:04,  9.41it/s]
+fcos_r50_fpn:  78%|███████▊  | 156/200 [00:19<00:04,  9.64it/s]
+fcos_r50_fpn:  78%|███████▊  | 157/200 [00:19<00:04,  9.64it/s]
+fcos_r50_fpn:  79%|███████▉  | 158/200 [00:19<00:04,  9.30it/s]
+fcos_r50_fpn:  80%|███████▉  | 159/200 [00:19<00:04,  9.21it/s]
+fcos_r50_fpn:  80%|████████  | 160/200 [00:19<00:05,  7.74it/s]
+fcos_r50_fpn:  81%|████████  | 162/200 [00:19<00:04,  9.39it/s]
+fcos_r50_fpn:  82%|████████▏ | 164/200 [00:19<00:03, 10.39it/s]
+fcos_r50_fpn:  83%|████████▎ | 166/200 [00:20<00:02, 11.43it/s]
+fcos_r50_fpn:  84%|████████▍ | 168/200 [00:20<00:02, 12.45it/s]
+fcos_r50_fpn:  85%|████████▌ | 170/200 [00:20<00:02, 13.22it/s]
+fcos_r50_fpn:  86%|████████▌ | 172/200 [00:20<00:02, 13.79it/s]
+fcos_r50_fpn:  87%|████████▋ | 174/200 [00:20<00:01, 14.51it/s]
+fcos_r50_fpn:  88%|████████▊ | 176/200 [00:20<00:01, 14.39it/s]
+fcos_r50_fpn:  89%|████████▉ | 178/200 [00:20<00:01, 14.31it/s]
+fcos_r50_fpn:  90%|█████████ | 180/200 [00:21<00:01, 13.93it/s]
+fcos_r50_fpn:  91%|█████████ | 182/200 [00:21<00:01, 14.62it/s]
+fcos_r50_fpn:  92%|█████████▏| 184/200 [00:21<00:01, 12.04it/s]
+fcos_r50_fpn:  93%|█████████▎| 186/200 [00:21<00:01, 12.23it/s]
+fcos_r50_fpn:  94%|█████████▍| 188/200 [00:21<00:00, 12.88it/s]
+fcos_r50_fpn:  95%|█████████▌| 190/200 [00:21<00:00, 13.48it/s]
+fcos_r50_fpn:  96%|█████████▌| 192/200 [00:21<00:00, 13.67it/s]
+fcos_r50_fpn:  97%|█████████▋| 194/200 [00:22<00:00, 13.79it/s]
+fcos_r50_fpn:  98%|█████████▊| 196/200 [00:22<00:00, 13.92it/s]
+fcos_r50_fpn:  99%|█████████▉| 198/200 [00:22<00:00, 13.59it/s]
+fcos_r50_fpn: 100%|██████████| 200/200 [00:22<00:00, 13.73it/s]
+fcos_r50_fpn: 100%|██████████| 200/200 [00:22<00:00,  8.87it/s]
+Loading and preparing results...
+DONE (t=0.02s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=1.78s).
+Accumulating evaluation results...
+DONE (t=0.66s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.439
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.627
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.482
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.304
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.486
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.618
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.392
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.596
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.617
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.398
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.647
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.789
+
+class              #gt     AP   AP50    APs    APm    APl
+person             504  0.534  0.830  0.361  0.611  0.686
+bicycle             11  0.525  0.733  0.800  0.443  0.682
+car                 46  0.506  0.711  0.419  0.652  0.673
+motorcycle          21  0.558  0.890  0.151  0.580  0.723
+airplane             6  0.656  0.833  0.700  0.535  0.950
+bus                 25  0.427  0.627  0.330  0.349  0.753
+train                5  0.550  0.604    n/a    n/a  0.550
+truck               15  0.195  0.463  0.216  0.186  0.517
+boat                 7  0.183  0.465  0.023  0.478    n/a
+traffic light       15  0.327  0.506  0.337  0.482  0.400
+fire hydrant         5  0.619  0.812  0.300  0.539  0.950
+stop sign            4  0.926  1.000  0.900  0.900  1.000
+bench               15  0.324  0.515  0.347  0.378  0.060
+bird                11  0.297  0.480  0.377  0.293    n/a
+cat                  7  0.789  0.955    n/a  1.000  0.747
+dog                  2  0.901  1.000    n/a  0.800  1.000
+horse                9  0.753  0.988  0.701  0.751  0.836
+sheep               10  0.671  0.901    n/a  0.850  0.631
+cow                  4  0.356  0.452  0.782    n/a  0.150
+elephant             6  0.453  0.716    n/a  0.151  0.639
+bear                 3  0.934  1.000    n/a    n/a  0.934
+zebra               11  0.820  0.965  0.400  0.925  0.859
+giraffe              1  1.000  1.000    n/a    n/a  1.000
+backpack            27  0.150  0.273  0.267  0.103    n/a
+umbrella             7  0.339  0.632  0.056  0.475  0.850
+handbag             21  0.150  0.271  0.120  0.173  0.380
+tie                 24  0.319  0.552  0.131  0.616  0.506
+suitcase             4  0.561  0.851    n/a  0.500  0.685
+frisbee              9  0.760  0.916  0.637  0.850  0.825
+skis                 5  0.563  1.000  0.565  0.550    n/a
+sports ball          4  0.209  0.514  0.267  0.037    n/a
+kite                19  0.487  0.779  0.701  0.450  0.653
+baseball bat         4  0.353  0.636  0.401    n/a    n/a
+baseball glove       6  0.496  0.700  0.558  0.460    n/a
+skateboard           6  0.554  0.777  0.252  0.855  0.400
+surfboard           10  0.502  0.716  0.150  0.692  0.457
+tennis racket        6  0.475  0.944  0.291  0.700    n/a
+bottle              31  0.281  0.423  0.221  0.488    n/a
+wine glass          32  0.303  0.544  0.175  0.429  1.000
+cup                 49  0.518  0.678  0.400  0.632  0.653
+fork                12  0.219  0.414  0.161  0.335  0.225
+knife               21  0.262  0.437  0.137  0.405  0.172
+spoon               13  0.102  0.223  0.180  0.210    n/a
+bowl                31  0.422  0.522  0.250  0.272  0.710
+banana              19  0.156  0.325  0.000  0.034  0.367
+apple                4  0.121  0.170  0.725    n/a  0.076
+sandwich             8  0.331  0.444    n/a    n/a  0.372
+orange               1  0.077  0.077    n/a    n/a  0.100
+broccoli            17  0.241  0.353  0.000  0.224  0.421
+carrot              13  0.325  0.486  0.000  0.316  0.800
+hot dog              3  0.396  0.547  0.700  0.195  0.267
+pizza               13  0.565  0.854  0.600  0.600  0.679
+donut                1  0.080  0.100    n/a    n/a  0.400
+cake                 3  0.597  0.663  0.000    n/a  0.900
+chair               71  0.282  0.429  0.132  0.320  0.640
+couch               12  0.444  0.589  0.000  0.388  0.526
+potted plant         8  0.335  0.617  0.175  0.528    n/a
+bed                  9  0.556  0.826    n/a  1.000  0.546
+dining table        29  0.483  0.646  0.000  0.270  0.561
+toilet               4  0.834  1.000    n/a  0.800  0.950
+tv                  16  0.614  0.736  0.088  0.680  0.747
+laptop              14  0.507  0.726    n/a  0.522  0.523
+mouse                5  0.503  0.802  0.464  0.653    n/a
+remote              10  0.100  0.211  0.120    n/a    n/a
+keyboard             9  0.325  0.463  0.000  0.429  0.700
+cell phone           9  0.131  0.203  0.065  0.467    n/a
+microwave            3  0.267  0.663  0.000  0.402    n/a
+oven                 2  0.801  1.000    n/a  0.700  0.900
+sink                 9  0.444  0.670  0.751  0.347  0.800
+refrigerator         5  0.596  0.860    n/a  0.200  0.677
+book                35  0.109  0.256  0.134  0.095    n/a
+clock                8  0.433  0.551  0.299    n/a  0.850
+vase                14  0.402  0.599  0.317  0.681  0.333
+scissors             2  0.000  0.000  0.000  0.000    n/a
+teddy bear           4  0.512  0.917    n/a  0.600  0.477
+
+Saved results\coco\fcos_r50_fpn\metrics.json
+>> C:\Users\maxog\Documents\SJSU material\CMPE 249\CMPE 249 Assignments\Track A\.venv\Scripts\python.exe evaluate.py --model yolo-world-s --dataset coco --max-images 200
+[31m[1mrequirements:[0m Ultralytics requirement ['git+https://github.com/ultralytics/CLIP.git'] not found, attempting AutoUpdate...
+Collecting git+https://github.com/ultralytics/CLIP.git
+  Cloning https://github.com/ultralytics/CLIP.git to c:\users\maxog\appdata\local\temp\pip-req-build-oun65upd
+  Running command git clone --filter=blob:none --quiet https://github.com/ultralytics/CLIP.git 'C:\Users\maxog\AppData\Local\Temp\pip-req-build-oun65upd'
+  Resolved https://github.com/ultralytics/CLIP.git to commit 7ffa84b3bfa40c42ecc1c77147a855e69cb2dd40
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting ftfy (from clip==1.0)
+  Downloading ftfy-6.3.1-py3-none-any.whl.metadata (7.3 kB)
+Requirement already satisfied: regex in c:\users\maxog\documents\sjsu material\cmpe 249\cmpe 249 assignments\track a\.venv\lib\site-packages (from clip==1.0) (2026.9.29)
+Requirement already satisfied: tqdm in c:\users\maxog\documents\sjsu material\cmpe 249\cmpe 249 assignments\track a\.venv\lib\site-packages (from clip==1.0) (4.70.1)
+Requirement already satisfied: torch in c:\users\maxog\appdata\local\programs\python\python311\lib\site-packages (from clip==1.0) (2.11.0+cu128)
+Requirement already satisfied: torchvision in c:\users\maxog\appdata\local\programs\python\python311\lib\site-packages (from clip==1.0) (0.26.0+cu128)
+Collecting wcwidth (from ftfy->clip==1.0)
+  Downloading wcwidth-0.9.4-cp310-abi3-win_amd64.whl.metadata (24 kB)
+Requirement already satisfied: filelock in c:\users\maxog\appdata\local\programs\python\python311\lib\site-packages (from torch->clip==1.0) (3.29.0)
+Requirement already satisfied: typing-extensions>=4.10.0 in c:\users\maxog\documents\sjsu material\cmpe 249\cmpe 249 assignments\track a\.venv\lib\site-packages (from torch->clip==1.0) (4.16.0)
+Requirement already satisfied: setuptools<82 in c:\users\maxog\documents\sjsu material\cmpe 249\cmpe 249 assignments\track a\.venv\lib\site-packages (from torch->clip==1.0) (65.5.0)
+Requirement already satisfied: sympy>=1.13.3 in c:\users\maxog\appdata\local\programs\python\python311\lib\site-packages (from torch->clip==1.0) (1.14.0)
+Requirement already satisfied: networkx>=2.5.1 in c:\users\maxog\appdata\local\programs\python\python311\lib\site-packages (from torch->clip==1.0) (3.6.1)
+Requirement already satisfied: jinja2 in c:\users\maxog\appdata\local\programs\python\python311\lib\site-packages (from torch->clip==1.0) (3.1.6)
+Requirement already satisfied: fsspec>=0.8.5 in c:\users\maxog\appdata\local\programs\python\python311\lib\site-packages (from torch->clip==1.0) (2026.3.0)
+Requirement already satisfied: numpy in c:\users\maxog\appdata\local\programs\python\python311\lib\site-packages (from torchvision->clip==1.0) (2.4.4)
+Requirement already satisfied: pillow!=8.3.*,>=5.3.0 in c:\users\maxog\appdata\local\programs\python\python311\lib\site-packages (from torchvision->clip==1.0) (12.2.0)
+Requirement already satisfied: colorama in c:\users\maxog\appdata\local\programs\python\python311\lib\site-packages (from tqdm->clip==1.0) (0.4.6)
+Requirement already satisfied: mpmath<1.4,>=1.1.0 in c:\users\maxog\appdata\local\programs\python\python311\lib\site-packages (from sympy>=1.13.3->torch->clip==1.0) (1.3.0)
+Requirement already satisfied: MarkupSafe>=2.0 in c:\users\maxog\appdata\local\programs\python\python311\lib\site-packages (from jinja2->torch->clip==1.0) (3.0.3)
+Downloading ftfy-6.3.1-py3-none-any.whl (44 kB)
+   ---------------------------------------- 44.8/44.8 kB 1.1 MB/s eta 0:00:00
+Downloading wcwidth-0.9.4-cp310-abi3-win_amd64.whl (597 kB)
+   ---------------------------------------- 597.8/597.8 kB 6.3 MB/s eta 0:00:00
+Building wheels for collected packages: clip
+  Building wheel for clip (pyproject.toml): started
+  Building wheel for clip (pyproject.toml): finished with status 'done'
+  Created wheel for clip: filename=clip-1.0-py3-none-any.whl size=1383088 sha256=e746ba340cd8603bc9618da98d2e5877f700593d2672657e55b5783d991b412b
+  Stored in directory: C:\Users\maxog\AppData\Local\Temp\pip-ephem-wheel-cache-cwnj9j6p\wheels\04\89\1d\c5712518ddb082b177c25dd0e1119b6a1c45ea1ab4e7fcd8a6
+Successfully built clip
+Installing collected packages: wcwidth, ftfy, clip
+Successfully installed clip-1.0 ftfy-6.3.1 wcwidth-0.9.4
+
+[notice] A new release of pip is available: 24.0 -> 26.2.2
+[notice] To update, run: C:\Users\maxog\Documents\SJSU material\CMPE 249\CMPE 249 Assignments\Track A\.venv\Scripts\python.exe -m pip install --upgrade pip
+
+[31m[1mrequirements:[0m AutoUpdate success  24.6s
+WARNING [31m[1mrequirements:[0m [1mRestart runtime or rerun command for updates to take effect[0m
+
+Evaluating yolo-world-s on coco: 200 images -> results\coco\yolo-world-s
+
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:   0%|          | 0/200 [00:00<?, ?it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:   0%|          | 1/200 [00:01<06:33,  1.98s/it]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:   1%|          | 2/200 [00:02<03:05,  1.07it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:   2%|▏         | 3/200 [00:02<01:53,  1.74it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:   2%|▏         | 4/200 [00:02<01:17,  2.52it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:   2%|▎         | 5/200 [00:02<00:58,  3.33it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:   4%|▍         | 8/200 [00:02<00:33,  5.70it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:   5%|▌         | 10/200 [00:03<00:29,  6.45it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:   6%|▌         | 11/200 [00:03<00:28,  6.58it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:   6%|▌         | 12/200 [00:03<00:27,  6.83it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:   6%|▋         | 13/200 [00:03<00:28,  6.49it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:   7%|▋         | 14/200 [00:03<00:29,  6.31it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:   8%|▊         | 15/200 [00:04<00:45,  4.07it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:   8%|▊         | 16/200 [00:04<00:38,  4.82it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:   8%|▊         | 17/200 [00:04<00:36,  5.05it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:   9%|▉         | 18/200 [00:04<00:34,  5.29it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:  10%|▉         | 19/200 [00:04<00:33,  5.48it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:  10%|█         | 20/200 [00:05<00:33,  5.40it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:  10%|█         | 21/200 [00:05<00:31,  5.66it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:  11%|█         | 22/200 [00:05<00:29,  6.01it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:  12%|█▏        | 23/200 [00:05<00:33,  5.21it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:  12%|█▏        | 24/200 [00:05<00:31,  5.51it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:  12%|█▎        | 25/200 [00:05<00:29,  5.90it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:  13%|█▎        | 26/200 [00:06<00:31,  5.55it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:  14%|█▎        | 27/200 [00:06<00:33,  5.20it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:  14%|█▍        | 28/200 [00:06<00:48,  3.55it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:  16%|█▌        | 31/200 [00:06<00:24,  6.96it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:  16%|█▋        | 33/200 [00:07<00:21,  7.73it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:  18%|█▊        | 35/200 [00:07<00:19,  8.30it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:  19%|█▉        | 38/200 [00:07<00:14, 11.20it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:  20%|██        | 40/200 [00:07<00:12, 12.80it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:  22%|██▏       | 43/200 [00:07<00:10, 15.03it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:  23%|██▎       | 46/200 [00:07<00:09, 16.74it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:  24%|██▍       | 49/200 [00:07<00:08, 17.97it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:  26%|██▌       | 51/200 [00:08<00:13, 10.78it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:  26%|██▋       | 53/200 [00:09<00:24,  6.10it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:  28%|██▊       | 55/200 [00:09<00:23,  6.08it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:  28%|██▊       | 56/200 [00:09<00:23,  6.03it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:  28%|██▊       | 57/200 [00:09<00:24,  5.78it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:  29%|██▉       | 58/200 [00:10<00:35,  4.00it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:  30%|██▉       | 59/200 [00:10<00:32,  4.38it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:  30%|███       | 60/200 [00:10<00:28,  4.83it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:  30%|███       | 61/200 [00:10<00:25,  5.38it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:  31%|███       | 62/200 [00:10<00:25,  5.47it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:  32%|███▏      | 63/200 [00:11<00:24,  5.56it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:  32%|███▏      | 64/200 [00:11<00:24,  5.62it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:  32%|███▎      | 65/200 [00:11<00:23,  5.80it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:  33%|███▎      | 66/200 [00:11<00:23,  5.80it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:  34%|███▎      | 67/200 [00:11<00:22,  5.79it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:  34%|███▍      | 68/200 [00:12<00:24,  5.33it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:  34%|███▍      | 69/200 [00:12<00:24,  5.42it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:  35%|███▌      | 70/200 [00:12<00:23,  5.42it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:  36%|███▌      | 71/200 [00:12<00:23,  5.51it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:  36%|███▌      | 72/200 [00:12<00:23,  5.43it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:  36%|███▋      | 73/200 [00:12<00:24,  5.25it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:  37%|███▋      | 74/200 [00:13<00:26,  4.78it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:  38%|███▊      | 75/200 [00:13<00:25,  4.81it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:  38%|███▊      | 76/200 [00:13<00:24,  5.06it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:  38%|███▊      | 77/200 [00:13<00:22,  5.57it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:  39%|███▉      | 78/200 [00:13<00:19,  6.42it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:  40%|███▉      | 79/200 [00:13<00:17,  6.80it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:  40%|████      | 80/200 [00:14<00:17,  6.86it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:  40%|████      | 81/200 [00:14<00:16,  7.08it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:  41%|████      | 82/200 [00:14<00:17,  6.69it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:  42%|████▏     | 83/200 [00:14<00:15,  7.38it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:  42%|████▏     | 84/200 [00:14<00:16,  6.97it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:  43%|████▎     | 86/200 [00:14<00:15,  7.52it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:  44%|████▎     | 87/200 [00:15<00:15,  7.18it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:  44%|████▍     | 88/200 [00:15<00:16,  6.69it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:  44%|████▍     | 89/200 [00:15<00:17,  6.47it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:  45%|████▌     | 90/200 [00:15<00:16,  6.81it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:  46%|████▌     | 91/200 [00:15<00:14,  7.33it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:  46%|████▌     | 92/200 [00:15<00:15,  7.02it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:  46%|████▋     | 93/200 [00:16<00:16,  6.40it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:  47%|████▋     | 94/200 [00:16<00:15,  6.98it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:  48%|████▊     | 95/200 [00:16<00:23,  4.39it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:  48%|████▊     | 96/200 [00:16<00:20,  5.08it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:  48%|████▊     | 97/200 [00:16<00:18,  5.70it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:  49%|████▉     | 98/200 [00:16<00:17,  5.77it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:  50%|████▉     | 99/200 [00:17<00:16,  6.00it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:  50%|█████     | 100/200 [00:17<00:16,  6.13it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:  50%|█████     | 101/200 [00:17<00:15,  6.57it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:  51%|█████     | 102/200 [00:17<00:14,  6.64it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:  52%|█████▏    | 103/200 [00:17<00:13,  7.02it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:  52%|█████▏    | 104/200 [00:17<00:14,  6.83it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:  52%|█████▎    | 105/200 [00:17<00:13,  6.90it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:  53%|█████▎    | 106/200 [00:18<00:14,  6.59it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:  54%|█████▎    | 107/200 [00:18<00:12,  7.31it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:  54%|█████▍    | 108/200 [00:18<00:12,  7.49it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:  55%|█████▍    | 109/200 [00:18<00:19,  4.75it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:  55%|█████▌    | 110/200 [00:18<00:16,  5.50it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:  56%|█████▌    | 112/200 [00:18<00:11,  7.86it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:  57%|█████▊    | 115/200 [00:19<00:07, 11.07it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:  59%|█████▉    | 118/200 [00:19<00:05, 14.71it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:  60%|██████    | 121/200 [00:19<00:04, 17.74it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:  62%|██████▏   | 124/200 [00:19<00:03, 19.36it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:  64%|██████▎   | 127/200 [00:19<00:03, 21.89it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:  66%|██████▌   | 131/200 [00:19<00:03, 22.93it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:  68%|██████▊   | 135/200 [00:19<00:02, 25.73it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:  69%|██████▉   | 138/200 [00:19<00:02, 26.03it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:  71%|███████   | 142/200 [00:20<00:01, 29.51it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:  73%|███████▎  | 146/200 [00:20<00:01, 27.74it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:  74%|███████▍  | 149/200 [00:20<00:01, 26.88it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:  76%|███████▌  | 152/200 [00:20<00:02, 22.99it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:  78%|███████▊  | 156/200 [00:20<00:01, 26.81it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:  80%|███████▉  | 159/200 [00:20<00:01, 26.23it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:  81%|████████  | 162/200 [00:21<00:02, 15.88it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:  82%|████████▎ | 165/200 [00:21<00:02, 12.43it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:  84%|████████▎ | 167/200 [00:21<00:02, 11.09it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:  84%|████████▍ | 169/200 [00:22<00:02, 10.66it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:  86%|████████▌ | 171/200 [00:22<00:02,  9.78it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:  86%|████████▋ | 173/200 [00:22<00:03,  8.50it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:  87%|████████▋ | 174/200 [00:23<00:04,  5.80it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:  88%|████████▊ | 175/200 [00:23<00:04,  5.89it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:  88%|████████▊ | 177/200 [00:23<00:03,  6.47it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:  89%|████████▉ | 178/200 [00:23<00:03,  6.57it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:  90%|█████████ | 180/200 [00:23<00:02,  7.01it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:  90%|█████████ | 181/200 [00:23<00:02,  7.33it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:  91%|█████████ | 182/200 [00:24<00:02,  7.28it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:  92%|█████████▏| 183/200 [00:24<00:02,  7.22it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:  92%|█████████▏| 184/200 [00:24<00:03,  4.69it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:  92%|█████████▎| 185/200 [00:24<00:02,  5.33it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:  93%|█████████▎| 186/200 [00:24<00:02,  5.65it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:  94%|█████████▎| 187/200 [00:25<00:02,  5.83it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:  94%|█████████▍| 188/200 [00:25<00:01,  6.50it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:  94%|█████████▍| 189/200 [00:25<00:01,  6.86it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:  95%|█████████▌| 190/200 [00:25<00:01,  6.49it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:  96%|█████████▌| 191/200 [00:25<00:01,  6.64it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:  96%|█████████▌| 192/200 [00:25<00:01,  6.97it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:  96%|█████████▋| 193/200 [00:25<00:01,  6.99it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:  97%|█████████▋| 194/200 [00:26<00:00,  7.23it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:  98%|█████████▊| 195/200 [00:26<00:00,  7.42it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:  98%|█████████▊| 196/200 [00:26<00:00,  7.31it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:  98%|█████████▊| 197/200 [00:26<00:00,  6.88it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s:  99%|█████████▉| 198/200 [00:26<00:00,  7.28it/s]
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+yolo-world-s: 100%|█████████▉| 199/200 [00:26<00:00,  7.20it/s]
+yolo-world-s: 100%|██████████| 200/200 [00:26<00:00,  7.22it/s]
+yolo-world-s: 100%|██████████| 200/200 [00:26<00:00,  7.44it/s]
+Loading and preparing results...
+DONE (t=0.05s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=2.55s).
+Accumulating evaluation results...
+DONE (t=0.57s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.416
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.569
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.449
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.275
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.497
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.602
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.331
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.547
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.565
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.373
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.633
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.732
+
+class              #gt     AP   AP50    APs    APm    APl
+person             504  0.568  0.800  0.314  0.674  0.791
+bicycle             11  0.399  0.560  0.700  0.273  0.636
+car                 46  0.397  0.577  0.331  0.516  0.568
+motorcycle          21  0.575  0.840  0.252  0.585  0.845
+airplane             6  0.752  0.888  0.701  0.567  1.000
+bus                 25  0.483  0.613  0.335  0.421  0.798
+train                5  0.550  0.604    n/a    n/a  0.550
+truck               15  0.246  0.341  0.240  0.187  0.925
+boat                 7  0.044  0.085  0.002  0.377    n/a
+traffic light       15  0.319  0.521  0.321  0.652  0.450
+fire hydrant         5  0.826  1.000  0.500  0.900  0.950
+stop sign            4  0.624  0.790  0.400  0.652  1.000
+bench               15  0.433  0.547  0.469  0.516  0.046
+bird                11  0.300  0.470  0.373  0.284    n/a
+cat                  7  0.874  1.000    n/a  1.000  0.852
+dog                  2  0.751  0.835    n/a  0.900  0.900
+horse                9  0.622  0.831  0.135  0.714  0.850
+sheep               10  0.669  0.825    n/a  0.850  0.658
+cow                  4  0.240  0.322  0.447    n/a  0.000
+elephant             6  0.736  1.000    n/a  0.801  0.742
+bear                 3  0.857  0.916    n/a    n/a  0.944
+zebra               11  0.816  0.969  0.100  0.900  0.917
+giraffe              1  1.000  1.000    n/a    n/a  1.000
+backpack            27  0.117  0.248  0.179  0.099    n/a
+umbrella             7  0.260  0.391  0.080  0.505  0.610
+handbag             21  0.136  0.189  0.001  0.269  0.404
+tie                 24  0.333  0.533  0.112  0.697  0.784
+suitcase             4  0.331  0.422    n/a  0.303  0.454
+frisbee              9  0.856  1.000  0.866  0.920  0.750
+skis                 5  0.542  0.717  0.532  0.636    n/a
+sports ball          4  0.064  0.129  0.168  0.000    n/a
+kite                19  0.441  0.664  0.533  0.484  0.676
+baseball bat         4  0.512  1.000  0.661    n/a    n/a
+baseball glove       6  0.624  1.000  0.766  0.573    n/a
+skateboard           6  0.522  0.804  0.202  0.767  0.500
+surfboard           10  0.597  0.778  0.086  0.672  0.700
+tennis racket        6  0.369  0.595  0.148  0.590    n/a
+bottle              31  0.236  0.396  0.180  0.417    n/a
+wine glass          32  0.386  0.561  0.201  0.610  0.900
+cup                 49  0.559  0.714  0.380  0.713  0.746
+fork                12  0.228  0.379  0.210  0.356  0.275
+knife               21  0.226  0.410  0.099  0.381  0.501
+spoon               13  0.102  0.155  0.069  0.247    n/a
+bowl                31  0.318  0.442  0.169  0.326  0.467
+banana              19  0.100  0.157  0.000  0.042  0.223
+apple                4  0.152  0.162  0.353    n/a  0.252
+sandwich             8  0.205  0.477    n/a    n/a  0.206
+orange               1  0.000  0.000    n/a    n/a  0.000
+broccoli            17  0.166  0.240  0.000  0.103  0.438
+carrot              13  0.052  0.221  0.000  0.093  0.081
+hot dog              3  0.202  0.337  0.600  0.000  0.000
+pizza               13  0.548  0.778  0.300  0.420  0.657
+donut                1  0.000  0.000    n/a    n/a  0.000
+cake                 3  0.598  0.663  0.000    n/a  0.901
+chair               71  0.357  0.544  0.036  0.444  0.746
+couch               12  0.479  0.619  0.000  0.706  0.513
+potted plant         8  0.363  0.571  0.166  0.650    n/a
+bed                  9  0.489  0.636    n/a  0.900  0.470
+dining table        29  0.565  0.692  0.000  0.402  0.646
+toilet               4  0.405  0.443    n/a  0.454  0.401
+tv                  16  0.618  0.792  0.007  0.715  0.687
+laptop              14  0.587  0.741    n/a  0.545  0.689
+mouse                5  0.624  1.000  0.683  0.501    n/a
+remote              10  0.071  0.104  0.141    n/a    n/a
+keyboard             9  0.334  0.424  0.000  0.410  0.800
+cell phone           9  0.276  0.366  0.141  0.900    n/a
+microwave            3  0.470  0.644  0.700  0.701    n/a
+oven                 2  0.164  0.505    n/a  0.000  0.344
+sink                 9  0.566  0.818  0.750  0.511  0.800
+refrigerator         5  0.488  0.705    n/a  0.133  0.580
+book                35  0.015  0.036  0.003  0.146    n/a
+clock                8  0.503  0.690  0.427    n/a  0.802
+vase                14  0.491  0.686  0.383  0.736  1.000
+scissors             2  0.000  0.000  0.000  0.000    n/a
+teddy bear           4  0.457  0.761    n/a  0.471  0.499
+
+Saved results\coco\yolo-world-s\metrics.json
+>> C:\Users\maxog\Documents\SJSU material\CMPE 249\CMPE 249 Assignments\Track A\.venv\Scripts\python.exe evaluate.py --model gdino-tiny --dataset coco --max-images 200
+W1026 17:27:17.785000 43416 site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: Redirects 
+are currently not supported in Windows or MacOs.
+
+Loading weights:   0%|          | 0/978 [00:00<?, ?it/s]
+Loading weights:  31%|███       | 303/978 [00:00<00:00, 2936.79it/s]
+Loading weights:  61%|██████    | 597/978 [00:00<00:00, 1290.24it/s]
+Loading weights:  87%|████████▋ | 846/978 [00:00<00:00, 1564.70it/s]
+Loading weights: 100%|██████████| 978/978 [00:01<00:00, 854.64it/s] 
+Evaluating gdino-tiny on coco: 200 images -> results\coco\gdino-tiny
+
+gdino-tiny:   0%|          | 0/200 [00:00<?, ?it/s]C:\Users\maxog\Documents\SJSU material\CMPE 249\CMPE 249 
+Assignments\Track A\.venv\Lib\site-packages\transformers\models\grounding_dino\processing_grounding_dino.py:89: 
+FutureWarning: The key `labels` is will return integer ids in 
+`GroundingDinoProcessor.post_process_grounded_object_detection` output since v4.51.0. Use `text_labels` instead to 
+retrieve string object names.
+  warnings.warn(self.message, FutureWarning)
+
+gdino-tiny:   0%|          | 1/200 [00:03<10:20,  3.12s/it]
+gdino-tiny:   1%|          | 2/200 [00:04<07:15,  2.20s/it]
+gdino-tiny:   2%|▏         | 3/200 [00:06<06:31,  1.99s/it]
+gdino-tiny:   2%|▏         | 4/200 [00:08<06:05,  1.86s/it]
+gdino-tiny:   2%|▎         | 5/200 [00:10<06:22,  1.96s/it]
+gdino-tiny:   3%|▎         | 6/200 [00:11<05:59,  1.85s/it]
+gdino-tiny:   4%|▎         | 7/200 [00:13<06:00,  1.87s/it]
+gdino-tiny:   4%|▍         | 8/200 [00:15<06:03,  1.89s/it]
+gdino-tiny:   4%|▍         | 9/200 [00:18<06:27,  2.03s/it]
+gdino-tiny:   5%|▌         | 10/200 [00:20<06:59,  2.21s/it]
+gdino-tiny:   6%|▌         | 11/200 [00:22<06:52,  2.18s/it]
+gdino-tiny:   6%|▌         | 12/200 [00:24<06:42,  2.14s/it]
+gdino-tiny:   6%|▋         | 13/200 [00:26<06:18,  2.02s/it]
+gdino-tiny:   7%|▋         | 14/200 [00:28<05:49,  1.88s/it]
+gdino-tiny:   8%|▊         | 15/200 [00:29<05:30,  1.79s/it]
+gdino-tiny:   8%|▊         | 16/200 [00:34<08:32,  2.78s/it]
+gdino-tiny:   8%|▊         | 17/200 [00:41<12:01,  3.94s/it]
+gdino-tiny:   9%|▉         | 18/200 [00:43<10:09,  3.35s/it]
+gdino-tiny:  10%|▉         | 19/200 [00:45<08:36,  2.85s/it]
+gdino-tiny:  10%|█         | 20/200 [00:46<07:42,  2.57s/it]
+gdino-tiny:  10%|█         | 21/200 [00:48<07:03,  2.36s/it]
+gdino-tiny:  11%|█         | 22/200 [00:50<06:32,  2.21s/it]
+gdino-tiny:  12%|█▏        | 23/200 [00:53<06:52,  2.33s/it]
+gdino-tiny:  12%|█▏        | 24/200 [00:56<07:12,  2.46s/it]
+gdino-tiny:  12%|█▎        | 25/200 [00:58<07:06,  2.44s/it]
+gdino-tiny:  13%|█▎        | 26/200 [01:01<07:15,  2.50s/it]
+gdino-tiny:  14%|█▎        | 27/200 [01:06<09:43,  3.37s/it]
+gdino-tiny:  14%|█▍        | 28/200 [01:15<14:33,  5.08s/it]
+gdino-tiny:  14%|█▍        | 29/200 [01:21<15:09,  5.32s/it]
+gdino-tiny:  15%|█▌        | 30/200 [01:26<15:09,  5.35s/it]
+gdino-tiny:  16%|█▌        | 31/200 [01:33<16:14,  5.77s/it]
+gdino-tiny:  16%|█▌        | 32/200 [01:40<17:09,  6.13s/it]
+gdino-tiny:  16%|█▋        | 33/200 [01:48<18:18,  6.58s/it]
+gdino-tiny:  17%|█▋        | 34/200 [01:55<18:47,  6.79s/it]
+gdino-tiny:  18%|█▊        | 35/200 [02:01<17:53,  6.51s/it]
+gdino-tiny:  18%|█▊        | 36/200 [02:06<16:30,  6.04s/it]
+gdino-tiny:  18%|█▊        | 37/200 [02:09<13:51,  5.10s/it]
+gdino-tiny:  19%|█▉        | 38/200 [02:11<11:22,  4.21s/it]
+gdino-tiny:  20%|█▉        | 39/200 [02:21<15:56,  5.94s/it]
+gdino-tiny:  20%|██        | 40/200 [02:33<20:37,  7.73s/it]
+gdino-tiny:  20%|██        | 41/200 [02:43<22:21,  8.44s/it]
+gdino-tiny:  21%|██        | 42/200 [02:52<22:23,  8.51s/it]
+gdino-tiny:  22%|██▏       | 43/200 [03:01<23:15,  8.89s/it]
+gdino-tiny:  22%|██▏       | 44/200 [03:05<18:43,  7.20s/it]
+gdino-tiny:  22%|██▎       | 45/200 [03:09<16:47,  6.50s/it]
+gdino-tiny:  23%|██▎       | 46/200 [03:14<14:54,  5.81s/it]
+gdino-tiny:  24%|██▎       | 47/200 [03:21<16:06,  6.32s/it]
+gdino-tiny:  24%|██▍       | 48/200 [03:29<17:28,  6.89s/it]
+gdino-tiny:  24%|██▍       | 49/200 [03:36<16:55,  6.73s/it]
+gdino-tiny:  25%|██▌       | 50/200 [03:41<15:59,  6.40s/it]
+gdino-tiny:  26%|██▌       | 51/200 [03:49<16:35,  6.68s/it]
+gdino-tiny:  26%|██▌       | 52/200 [03:53<14:29,  5.87s/it]
+gdino-tiny:  26%|██▋       | 53/200 [04:03<17:27,  7.13s/it]
+gdino-tiny:  27%|██▋       | 54/200 [04:13<19:41,  8.09s/it]
+gdino-tiny:  28%|██▊       | 55/200 [04:19<18:14,  7.55s/it]
+gdino-tiny:  28%|██▊       | 56/200 [04:27<17:58,  7.49s/it]
+gdino-tiny:  28%|██▊       | 57/200 [04:34<17:42,  7.43s/it]
+gdino-tiny:  29%|██▉       | 58/200 [04:42<18:03,  7.63s/it]
+gdino-tiny:  30%|██▉       | 59/200 [04:51<19:10,  8.16s/it]
+gdino-tiny:  30%|███       | 60/200 [05:01<20:11,  8.65s/it]
+gdino-tiny:  30%|███       | 61/200 [05:11<21:01,  9.08s/it]
+gdino-tiny:  31%|███       | 62/200 [05:21<21:09,  9.20s/it]
+gdino-tiny:  32%|███▏      | 63/200 [05:28<19:30,  8.54s/it]
+gdino-tiny:  32%|███▏      | 64/200 [05:34<17:41,  7.81s/it]
+gdino-tiny:  32%|███▎      | 65/200 [05:43<18:42,  8.31s/it]
+gdino-tiny:  33%|███▎      | 66/200 [05:52<18:51,  8.44s/it]
+gdino-tiny:  34%|███▎      | 67/200 [06:03<20:33,  9.27s/it]
+gdino-tiny:  34%|███▍      | 68/200 [06:11<19:26,  8.84s/it]
+gdino-tiny:  34%|███▍      | 69/200 [06:20<19:20,  8.86s/it]
+gdino-tiny:  35%|███▌      | 70/200 [06:27<17:52,  8.25s/it]
+gdino-tiny:  36%|███▌      | 71/200 [06:36<18:01,  8.38s/it]
+gdino-tiny:  36%|███▌      | 72/200 [06:44<17:40,  8.29s/it]
+gdino-tiny:  36%|███▋      | 73/200 [06:52<17:32,  8.29s/it]
+gdino-tiny:  37%|███▋      | 74/200 [07:01<18:05,  8.62s/it]
+gdino-tiny:  38%|███▊      | 75/200 [07:11<18:27,  8.86s/it]
+gdino-tiny:  38%|███▊      | 76/200 [07:21<19:12,  9.30s/it]
+gdino-tiny:  38%|███▊      | 77/200 [07:30<18:39,  9.10s/it]
+gdino-tiny:  39%|███▉      | 78/200 [07:40<19:07,  9.40s/it]
+gdino-tiny:  40%|███▉      | 79/200 [07:48<18:24,  9.13s/it]
+gdino-tiny:  40%|████      | 80/200 [07:57<17:43,  8.86s/it]
+gdino-tiny:  40%|████      | 81/200 [08:06<17:48,  8.98s/it]
+gdino-tiny:  41%|████      | 82/200 [08:14<17:01,  8.66s/it]
+gdino-tiny:  42%|████▏     | 83/200 [08:22<16:22,  8.39s/it]
+gdino-tiny:  42%|████▏     | 84/200 [08:30<16:22,  8.47s/it]
+gdino-tiny:  42%|████▎     | 85/200 [08:40<16:47,  8.76s/it]
+gdino-tiny:  43%|████▎     | 86/200 [08:49<16:46,  8.83s/it]
+gdino-tiny:  44%|████▎     | 87/200 [08:56<15:46,  8.37s/it]
+gdino-tiny:  44%|████▍     | 88/200 [09:04<15:36,  8.36s/it]
+gdino-tiny:  44%|████▍     | 89/200 [09:12<15:21,  8.30s/it]
+gdino-tiny:  45%|████▌     | 90/200 [09:21<15:18,  8.35s/it]
+gdino-tiny:  46%|████▌     | 91/200 [09:32<16:43,  9.20s/it]
+gdino-tiny:  46%|████▌     | 92/200 [09:41<16:10,  8.98s/it]
+gdino-tiny:  46%|████▋     | 93/200 [09:49<15:44,  8.83s/it]
+gdino-tiny:  47%|████▋     | 94/200 [09:58<15:45,  8.92s/it]
+gdino-tiny:  48%|████▊     | 95/200 [10:06<14:59,  8.56s/it]
+gdino-tiny:  48%|████▊     | 96/200 [10:13<14:13,  8.21s/it]
+gdino-tiny:  48%|████▊     | 97/200 [10:23<14:40,  8.55s/it]
+gdino-tiny:  49%|████▉     | 98/200 [10:32<14:49,  8.72s/it]
+gdino-tiny:  50%|████▉     | 99/200 [10:39<13:56,  8.28s/it]
+gdino-tiny:  50%|█████     | 100/200 [10:49<14:26,  8.67s/it]
+gdino-tiny:  50%|█████     | 101/200 [10:56<13:32,  8.21s/it]
+gdino-tiny:  51%|█████     | 102/200 [11:07<14:47,  9.06s/it]
+gdino-tiny:  52%|█████▏    | 103/200 [11:15<14:30,  8.97s/it]
+gdino-tiny:  52%|█████▏    | 104/200 [11:24<14:13,  8.89s/it]
+gdino-tiny:  52%|█████▎    | 105/200 [11:33<13:49,  8.73s/it]
+gdino-tiny:  53%|█████▎    | 106/200 [11:43<14:27,  9.23s/it]
+gdino-tiny:  54%|█████▎    | 107/200 [11:51<13:39,  8.81s/it]
+gdino-tiny:  54%|█████▍    | 108/200 [12:03<15:09,  9.88s/it]
+gdino-tiny:  55%|█████▍    | 109/200 [12:09<13:07,  8.66s/it]
+gdino-tiny:  55%|█████▌    | 110/200 [12:16<12:06,  8.08s/it]
+gdino-tiny:  56%|█████▌    | 111/200 [12:24<12:02,  8.12s/it]
+gdino-tiny:  56%|█████▌    | 112/200 [12:30<10:58,  7.48s/it]
+gdino-tiny:  56%|█████▋    | 113/200 [14:51<1:08:51, 47.49s/it]
+gdino-tiny:  57%|█████▋    | 114/200 [16:12<1:22:37, 57.64s/it]
+gdino-tiny:  57%|█████▊    | 115/200 [16:15<58:17, 41.15s/it]  
+gdino-tiny:  58%|█████▊    | 116/200 [16:17<41:26, 29.60s/it]
+gdino-tiny:  58%|█████▊    | 117/200 [16:20<29:50, 21.57s/it]
+gdino-tiny:  59%|█████▉    | 118/200 [16:23<21:36, 15.81s/it]
+gdino-tiny:  60%|█████▉    | 119/200 [16:25<15:47, 11.70s/it]
+gdino-tiny:  60%|██████    | 120/200 [16:27<11:57,  8.97s/it]
+gdino-tiny:  60%|██████    | 121/200 [16:30<09:11,  6.98s/it]
+gdino-tiny:  61%|██████    | 122/200 [16:32<07:11,  5.53s/it]
+gdino-tiny:  62%|██████▏   | 123/200 [16:34<05:43,  4.47s/it]
+gdino-tiny:  62%|██████▏   | 124/200 [16:36<04:49,  3.81s/it]
+gdino-tiny:  62%|██████▎   | 125/200 [16:38<04:12,  3.37s/it]
+gdino-tiny:  63%|██████▎   | 126/200 [16:41<03:41,  3.00s/it]
+gdino-tiny:  64%|██████▎   | 127/200 [16:43<03:20,  2.75s/it]
+gdino-tiny:  64%|██████▍   | 128/200 [16:45<03:02,  2.53s/it]
+gdino-tiny:  64%|██████▍   | 129/200 [16:47<02:56,  2.48s/it]
+gdino-tiny:  65%|██████▌   | 130/200 [16:49<02:51,  2.45s/it]
+gdino-tiny:  66%|██████▌   | 131/200 [16:52<02:43,  2.37s/it]
+gdino-tiny:  66%|██████▌   | 132/200 [16:55<02:55,  2.58s/it]
+gdino-tiny:  66%|██████▋   | 133/200 [16:58<03:09,  2.83s/it]
+gdino-tiny:  67%|██████▋   | 134/200 [17:02<03:25,  3.12s/it]
+gdino-tiny:  68%|██████▊   | 135/200 [17:07<03:59,  3.68s/it]
+gdino-tiny:  68%|██████▊   | 136/200 [17:11<03:57,  3.71s/it]
+gdino-tiny:  68%|██████▊   | 137/200 [17:14<03:49,  3.64s/it]
+gdino-tiny:  69%|██████▉   | 138/200 [17:18<03:57,  3.84s/it]
+gdino-tiny:  70%|██████▉   | 139/200 [17:22<03:50,  3.79s/it]
+gdino-tiny:  70%|███████   | 140/200 [17:25<03:32,  3.53s/it]
+gdino-tiny:  70%|███████   | 141/200 [17:28<03:23,  3.45s/it]
+gdino-tiny:  71%|███████   | 142/200 [17:33<03:42,  3.84s/it]
+gdino-tiny:  72%|███████▏  | 143/200 [17:38<03:50,  4.05s/it]
+gdino-tiny:  72%|███████▏  | 144/200 [17:44<04:31,  4.86s/it]
+gdino-tiny:  72%|███████▎  | 145/200 [17:51<04:56,  5.40s/it]
+gdino-tiny:  73%|███████▎  | 146/200 [18:01<05:57,  6.62s/it]
+gdino-tiny:  74%|███████▎  | 147/200 [18:06<05:33,  6.30s/it]
+gdino-tiny:  74%|███████▍  | 148/200 [18:12<05:18,  6.12s/it]
+gdino-tiny:  74%|███████▍  | 149/200 [18:17<04:55,  5.79s/it]
+gdino-tiny:  75%|███████▌  | 150/200 [18:23<05:02,  6.05s/it]
+gdino-tiny:  76%|███████▌  | 151/200 [18:33<05:41,  6.97s/it]
+gdino-tiny:  76%|███████▌  | 152/200 [18:45<06:55,  8.67s/it]
+gdino-tiny:  76%|███████▋  | 153/200 [18:53<06:35,  8.41s/it]
+gdino-tiny:  77%|███████▋  | 154/200 [19:05<07:22,  9.63s/it]
+gdino-tiny:  78%|███████▊  | 155/200 [19:11<06:18,  8.41s/it]
+gdino-tiny:  78%|███████▊  | 156/200 [19:20<06:14,  8.51s/it]
+gdino-tiny:  78%|███████▊  | 157/200 [19:30<06:24,  8.95s/it]
+gdino-tiny:  79%|███████▉  | 158/200 [19:37<05:52,  8.39s/it]
+gdino-tiny:  80%|███████▉  | 159/200 [19:44<05:30,  8.07s/it]
+gdino-tiny:  80%|████████  | 160/200 [19:53<05:31,  8.29s/it]
+gdino-tiny:  80%|████████  | 161/200 [20:02<05:33,  8.55s/it]
+gdino-tiny:  81%|████████  | 162/200 [20:10<05:22,  8.49s/it]
+gdino-tiny:  82%|████████▏ | 163/200 [20:18<05:02,  8.17s/it]
+gdino-tiny:  82%|████████▏ | 164/200 [20:26<04:52,  8.13s/it]
+gdino-tiny:  82%|████████▎ | 165/200 [20:34<04:45,  8.16s/it]
+gdino-tiny:  83%|████████▎ | 166/200 [20:43<04:46,  8.43s/it]
+gdino-tiny:  84%|████████▎ | 167/200 [20:49<04:09,  7.55s/it]
+gdino-tiny:  84%|████████▍ | 168/200 [20:56<04:02,  7.57s/it]
+gdino-tiny:  84%|████████▍ | 169/200 [21:05<04:04,  7.87s/it]
+gdino-tiny:  85%|████████▌ | 170/200 [21:14<04:11,  8.39s/it]
+gdino-tiny:  86%|████████▌ | 171/200 [21:24<04:14,  8.76s/it]
+gdino-tiny:  86%|████████▌ | 172/200 [21:32<04:01,  8.63s/it]
+gdino-tiny:  86%|████████▋ | 173/200 [21:41<03:50,  8.53s/it]
+gdino-tiny:  87%|████████▋ | 174/200 [21:49<03:40,  8.48s/it]
+gdino-tiny:  88%|████████▊ | 175/200 [21:58<03:36,  8.65s/it]
+gdino-tiny:  88%|████████▊ | 176/200 [22:06<03:20,  8.35s/it]
+gdino-tiny:  88%|████████▊ | 177/200 [22:15<03:20,  8.72s/it]
+gdino-tiny:  89%|████████▉ | 178/200 [22:25<03:17,  8.98s/it]
+gdino-tiny:  90%|████████▉ | 179/200 [22:33<03:00,  8.62s/it]
+gdino-tiny:  90%|█████████ | 180/200 [22:43<03:04,  9.23s/it]
+gdino-tiny:  90%|█████████ | 181/200 [22:51<02:47,  8.83s/it]
+gdino-tiny:  91%|█████████ | 182/200 [23:00<02:39,  8.85s/it]
+gdino-tiny:  92%|█████████▏| 183/200 [23:09<02:30,  8.85s/it]
+gdino-tiny:  92%|█████████▏| 184/200 [23:17<02:18,  8.68s/it]
+gdino-tiny:  92%|█████████▎| 185/200 [23:24<01:59,  7.96s/it]
+gdino-tiny:  93%|█████████▎| 186/200 [23:30<01:45,  7.53s/it]
+gdino-tiny:  94%|█████████▎| 187/200 [23:38<01:37,  7.49s/it]
+gdino-tiny:  94%|█████████▍| 188/200 [23:48<01:39,  8.30s/it]
+gdino-tiny:  94%|█████████▍| 189/200 [23:57<01:33,  8.47s/it]
+gdino-tiny:  95%|█████████▌| 190/200 [24:03<01:19,  7.98s/it]
+gdino-tiny:  96%|█████████▌| 191/200 [24:09<01:06,  7.37s/it]
+gdino-tiny:  96%|█████████▌| 192/200 [24:18<01:02,  7.76s/it]
+gdino-tiny:  96%|█████████▋| 193/200 [24:25<00:53,  7.60s/it]
+gdino-tiny:  97%|█████████▋| 194/200 [24:32<00:43,  7.32s/it]
+gdino-tiny:  98%|█████████▊| 195/200 [24:39<00:36,  7.38s/it]
+gdino-tiny:  98%|█████████▊| 196/200 [24:47<00:29,  7.35s/it]
+gdino-tiny:  98%|█████████▊| 197/200 [24:55<00:23,  7.75s/it]
+gdino-tiny:  99%|█████████▉| 198/200 [25:04<00:15,  8.00s/it]
+gdino-tiny: 100%|█████████▉| 199/200 [25:12<00:08,  8.15s/it]
+gdino-tiny: 100%|██████████| 200/200 [25:20<00:00,  7.91s/it]
+gdino-tiny: 100%|██████████| 200/200 [25:20<00:00,  7.60s/it]
+Loading and preparing results...
+DONE (t=0.03s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=1.93s).
+Accumulating evaluation results...
+DONE (t=0.97s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.478
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.612
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.516
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.307
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.558
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.650
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.366
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.565
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.571
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.350
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.627
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.744
+
+class              #gt     AP   AP50    APs    APm    APl
+person             504  0.620  0.823  0.384  0.708  0.830
+bicycle             11  0.593  0.723  0.900  0.547  0.598
+car                 46  0.492  0.640  0.383  0.633  0.697
+motorcycle          21  0.716  0.959  0.350  0.771  0.827
+airplane             6  0.725  0.976  0.602  0.604  1.000
+bus                 25  0.591  0.774  0.413  0.540  0.932
+train                5  0.604  0.604    n/a    n/a  0.604
+truck               15  0.233  0.376  0.068  0.290  0.835
+boat                 7  0.229  0.356  0.056  0.342    n/a
+traffic light       15  0.478  0.711  0.490  0.404  0.500
+fire hydrant         5  0.716  0.802  0.700  0.454  1.000
+stop sign            4  0.584  0.653  0.000  0.850  1.000
+bench               15  0.434  0.533  0.520  0.468  0.000
+bird                11  0.440  0.623  0.430  0.510    n/a
+cat                  7  0.799  1.000    n/a  1.000  0.780
+dog                  2  0.900  1.000    n/a  0.900  0.900
+horse                9  0.671  0.881  0.404  0.827  0.747
+sheep               10  0.654  0.733    n/a  0.950  0.661
+cow                  4  0.000  0.000  0.000    n/a  0.000
+elephant             6  0.919  0.976    n/a  0.900  0.917
+bear                 3  0.955  1.000    n/a    n/a  0.955
+zebra               11  0.803  0.992  0.200  0.950  0.854
+giraffe              1  1.000  1.000    n/a    n/a  1.000
+backpack            27  0.198  0.326  0.136  0.412    n/a
+umbrella             7  0.168  0.389  0.067  0.505  0.235
+handbag             21  0.158  0.215  0.030  0.215  0.533
+tie                 24  0.513  0.740  0.338  0.835  0.720
+suitcase             4  0.875  1.000    n/a  0.850  0.925
+frisbee              9  0.761  0.881  0.531  0.925  0.800
+skis                 5  0.702  0.904  0.782  0.603    n/a
+sports ball          4  0.129  0.257  0.168  0.000    n/a
+kite                19  0.377  0.544  0.310  0.424  1.000
+baseball bat         4  0.714  1.000  0.793    n/a    n/a
+baseball glove       6  0.589  1.000  0.817  0.444    n/a
+skateboard           6  0.723  0.804  0.454  0.900  0.900
+surfboard           10  0.775  0.934  0.700  0.815  0.784
+tennis racket        6  0.000  0.000  0.000  0.000    n/a
+bottle              31  0.401  0.606  0.388  0.487    n/a
+wine glass          32  0.520  0.697  0.362  0.670  0.900
+cup                 49  0.617  0.753  0.503  0.672  0.782
+fork                12  0.298  0.347  0.258  0.418  0.000
+knife               21  0.601  0.733  0.376  0.814  0.670
+spoon               13  0.227  0.285  0.159  0.413    n/a
+bowl                31  0.428  0.549  0.331  0.305  0.664
+banana              19  0.243  0.386  0.000  0.025  0.652
+apple                4  0.323  0.340  0.404    n/a  0.505
+sandwich             8  0.331  0.451    n/a    n/a  0.426
+orange               1  0.071  0.071    n/a    n/a  0.200
+broccoli            17  0.257  0.317  0.000  0.233  0.494
+carrot              13  0.214  0.345  0.000  0.393  0.000
+hot dog              3  0.000  0.000  0.000  0.000  0.000
+pizza               13  0.651  0.837  0.700  0.783  0.631
+donut                1  0.000  0.000    n/a    n/a  0.000
+cake                 3  0.663  0.663  0.000    n/a  1.000
+chair               71  0.404  0.553  0.118  0.476  0.760
+couch               12  0.467  0.614  0.400  0.303  0.547
+potted plant         8  0.442  0.701  0.229  0.667    n/a
+bed                  9  0.482  0.708    n/a  0.700  0.512
+dining table        29  0.106  0.142  0.000  0.370  0.077
+toilet               4  0.500  0.529    n/a  0.252  0.777
+tv                  16  0.665  0.794  0.000  0.855  0.656
+laptop              14  0.772  0.875    n/a  0.820  0.723
+mouse                5  0.553  0.802  0.531  0.551    n/a
+remote              10  0.122  0.149  0.128    n/a    n/a
+keyboard             9  0.446  0.502  0.000  0.582  0.433
+cell phone           9  0.167  0.259  0.125  0.373    n/a
+microwave            3  0.548  0.663  0.000  0.825    n/a
+oven                 2  0.151  0.505    n/a  0.000  0.300
+sink                 9  0.566  0.978  0.801  0.526  0.900
+refrigerator         5  0.692  0.934    n/a  0.800  0.704
+book                35  0.048  0.078  0.002  0.599    n/a
+clock                8  0.540  0.752  0.439    n/a  0.900
+vase                14  0.575  0.835  0.523  0.632  1.000
+scissors             2  0.000  0.000  0.000  0.000    n/a
+teddy bear           4  0.956  1.000    n/a  1.000  0.944
+
+Saved results\coco\gdino-tiny\metrics.json

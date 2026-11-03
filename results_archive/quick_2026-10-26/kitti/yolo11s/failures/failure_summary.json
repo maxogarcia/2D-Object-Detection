@@ -1,0 +1,47 @@
+{
+  "score_threshold": 0.3,
+  "iou_threshold": 0.5,
+  "per_class": {
+    "car": {
+      "TP": 564,
+      "FN": 148,
+      "FP": 76,
+      "recall": 0.792,
+      "precision": 0.881
+    },
+    "truck": {
+      "TP": 6,
+      "FN": 20,
+      "FP": 17,
+      "recall": 0.231,
+      "precision": 0.261
+    },
+    "person": {
+      "TP": 44,
+      "FN": 43,
+      "FP": 21,
+      "recall": 0.506,
+      "precision": 0.677
+    }
+  },
+  "missed_by_box_height": {
+    "h<25px": 39,
+    "25-40px": 77,
+    "40-100px": 67,
+    ">=100px": 28
+  },
+  "missed_by_occlusion": {
+    "0": 49,
+    "1": 50,
+    "2": 105,
+    "3": 7
+  },
+  "drawn_images": [
+    "000135",
+    "000115",
+    "000031",
+    "000041",
+    "000187",
+    "000199"
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "command": "python.exe benchmark.py --model yolo11s --dataset kitti --imgsz 1280 --run-name yolo11s_1280 --eval-run yolo11s_1280",
+  "dataset": "kitti",
+  "eval_run": "yolo11s_1280",
+  "num_images": 200,
+  "timed_iterations": 200,
+  "image_size_hw_example": [
+    375,
+    1242
+  ],
+  "model": {
+    "model": "yolo11s",
+    "family": "YOLO",
+    "framework": "ultralytics 8.4.190",
+    "checkpoint": "yolo11s.pt",
+    "input_resolution": "letterbox, long side 1280 (rect, stride-padded)",
+    "conf_thresh": 0.25,
+    "nms_iou": 0.7,
+    "max_det": 100,
+    "fp16": false,
+    "text_prompt": null,
+    "params_M": 9.46
+  },
+  "latency_ms": {
+    "median": 19.69509999617003,
+    "mean": 19.79052850190783,
+    "p90": 21.655179979279637,
+    "min": 16.53640001313761,
+    "std": 1.3388875653779773
+  },
+  "fps_from_median": 50.7740504081961,
+  "peak_gpu_mem_allocated_MB": 123.0,
+  "peak_gpu_mem_reserved_MB": 178.0,
+  "notes": "batch=1, end-to-end incl. pre/post-processing, images preloaded; torch allocator stats exclude the CUDA context (~300-500 MB)",
+  "env": {
+    "python": "3.11.9",
+    "os": "Windows-10-10.0.26300-SP0",
+    "cpu": "Intel(R) Core(TM) Ultra 9 185H",
+    "ram_gb": 31.4,
+    "packages": {
+      "torch": "2.11.0+cu128",
+      "torchvision": "0.26.0+cu128",
+      "ultralytics": "8.4.190",
+      "transformers": "5.21.0",
+      "pycocotools": "2.0.11",
+      "numpy": "2.4.4",
+      "pillow": "12.2.0",
+      "opencv-python": "5.0.0.93"
+    },
+    "nvidia_smi": [
+      {
+        "name": "NVIDIA GeForce RTX 4080 Laptop GPU",
+        "driver_version": "610.88",
+        "memory.total": "12282 MiB",
+        "power.max_limit": "125.00 W",
+        "enforced.power.limit": "55.00 W",
+        "clocks.max.graphics": "3105 MHz"
+      }
+    ],
+    "cuda_available": true,
+    "torch_cuda": "12.8",
+    "cudnn": 91900,
+    "gpus": [
+      {
+        "name": "NVIDIA GeForce RTX 4080 Laptop GPU",
+        "vram_gb": 12.0,
+        "compute_capability": "8.9"
+      }
+    ]
+  }
+}
